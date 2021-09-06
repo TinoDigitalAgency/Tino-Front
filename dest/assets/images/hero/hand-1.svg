@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="25" viewBox="0 0 17 25">
+    <defs>
+        <filter id="lngegbu8ob" width="137.1%" height="124.5%" x="-18.6%" y="-12.2%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="2.5"/>
+            <feOffset dx="1" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+            <feColorMatrix in="shadowInnerInner1" result="shadowMatrixInner1" values="0 0 0 0 0.880594336 0 0 0 0 0.200557201 0 0 0 0 0.79496003 0 0 0 1 0"/>
+            <feGaussianBlur in="SourceAlpha" result="shadowBlurInner2" stdDeviation="1"/>
+            <feOffset dx="-2" dy="-2" in="shadowBlurInner2" result="shadowOffsetInner2"/>
+            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner2"/>
+            <feColorMatrix in="shadowInnerInner2" result="shadowMatrixInner2" values="0 0 0 0 0.050601382 0 0 0 0 0.0274733392 0 0 0 0 0.595762391 0 0 0 0.5 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixInner1"/>
+                <feMergeNode in="shadowMatrixInner2"/>
+            </feMerge>
+        </filter>
+        <filter id="ukc7mawhvc" width="266.7%" height="314.3%" x="-83.3%" y="-107.1%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="5"/>
+        </filter>
+        <path id="cy55f6q5ja" d="M.5 2L1 5.5c-.667 2-1 3.833-1 5.5 0 1.667.833 2.833 2.5 3.5.333.667.833 1 1.5 1h1.5c.333.333.833.5 1.5.5s1.167-.167 1.5-.5v7c0 1.5.801 2 1.5 2 .597 0 1.5-.408 1.5-2v-9c.667 2 1.667 3 3 3 2 0 2-1.5 1-2S14 9 13 7.5c-.667-1-1.833-1.833-3.5-2.5l1-3c-1.333-1.333-3-2-5-2S1.833.667.5 2z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-304.000000, -309.000000) translate(304.500000, 309.000000)">
+                <mask id="pe6i9w4lyd" fill="#fff">
+                    <use xlink:href="#cy55f6q5ja"/>
+                </mask>
+                <g>
+                    <use fill="#A91889" xlink:href="#cy55f6q5ja"/>
+                    <use fill="#000" filter="url(#lngegbu8ob)" xlink:href="#cy55f6q5ja"/>
+                </g>
+                <ellipse cx="13.5" cy="4" fill="#160FBB" filter="url(#ukc7mawhvc)" mask="url(#pe6i9w4lyd)" rx="9" ry="7"/>
+            </g>
+        </g>
+    </g>
+</svg>

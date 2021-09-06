@@ -1,0 +1,13 @@
+.run-stroke {
+  width: 110%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(-10deg);
+  .swiper-slide {
+    width: auto;
+  }
+}
+.swiper-free-mode>.swiper-wrapper {
+  transition-timing-function: linear;
+}
