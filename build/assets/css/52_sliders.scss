@@ -11,3 +11,42 @@
 .swiper-free-mode>.swiper-wrapper {
   transition-timing-function: linear;
 }
+
+.partner-slider {
+  &::before {
+    content: '';
+    height: 100%;
+    width: 140px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(270deg, rgba($mainBlack,0.00) 0%, $mainBlack 100%);
+    z-index: 2;
+  }
+  .swiper-slide {
+    width: 240px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    width: auto;
+    &.chopa {
+      height: 71px;
+    }
+    &.mindnow {
+      height: 20px;
+    }
+    &.ogre {
+      height: 60px;
+    }
+    &.rollo {
+      height: 32px;
+    }
+    &.kepler,
+    &.toyota {
+      height: 39px;
+    }
+  }
+}
