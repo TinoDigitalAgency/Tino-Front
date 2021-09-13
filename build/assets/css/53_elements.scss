@@ -1,0 +1,49 @@
+.hero-line-animation {
+  margin-top: 30px;
+  width: 177px;
+  position: relative;
+  img {
+    display: block;
+  }
+  .hero-line {
+    transition: all 1s;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  .hero-hand {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    transition: all 1s;
+  }
+  &.active {
+    .hero-hand {
+      left: 100%;
+      margin-left: -12px;
+    }
+    .hero-line {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+}
+
+.play-showreal {
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 166px;
+  height: 166px;
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: RotatePlayText 10s forwards infinite linear;
+  }
+}

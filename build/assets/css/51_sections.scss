@@ -1,3 +1,8 @@
+@import './variables.scss';
+.app-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
 .section {
   &-hero {
     position: relative;
@@ -25,6 +30,42 @@
     .stroke-text {
       font-size: 76px;
       font-family: Graphit-Medium;
+      span {
+        transition: all 400ms;
+        -webkit-text-stroke: 2px $whiteColor;
+      }
+
+      cursor: pointer;
+      &:hover {
+        span {
+          -webkit-text-stroke: 2px $whiteColor;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+    .showreal-block {
+      position: absolute;
+      left: 50%;
+      bottom: 50px;
+      transform: translateX(-50%);
+    }
+    .scroll-down {
+      position: absolute;
+      left: 50px;
+      bottom: 20px;
+      color: $whiteColor;
+      padding-top: 20px;
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      cursor: pointer;
+      span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 1px;
+        background: $whiteColor;
+        animation: LineToggle 1.5s forwards infinite ease-in-out;
+      }
     }
   }
 }
