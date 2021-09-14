@@ -1,4 +1,16 @@
+@import './variables.scss';
+.app-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
 .section {
+  p {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  &-inner {
+    padding: 100px 0;
+  }
   &-hero {
     position: relative;
     .section-inner {
@@ -25,6 +37,77 @@
     .stroke-text {
       font-size: 76px;
       font-family: Graphit-Medium;
+      span {
+        transition: all 400ms;
+        -webkit-text-stroke: 2px $whiteColor;
+      }
+
+      cursor: pointer;
+      &:hover {
+        span {
+          -webkit-text-stroke: 2px $whiteColor;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+    .showreal-block {
+      position: absolute;
+      left: 50%;
+      bottom: 50px;
+      transform: translateX(-50%);
+    }
+    .scroll-down {
+      position: absolute;
+      left: 50px;
+      bottom: 20px;
+      color: $whiteColor;
+      padding-top: 20px;
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      cursor: pointer;
+      span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 1px;
+        background: $whiteColor;
+        animation: LineToggle 1.5s forwards infinite ease-in-out;
+      }
+    }
+  }
+  &-about {
+    .section-inner {
+      padding: 100px 0;
+    }
+    .partner-slider {
+      margin-top: 60px;
+    }
+    .button-group {
+      margin-top: 60px;
+    }
+  }
+  &-services {
+    .row {
+      margin-top: 100px;
+    }
+    .col-6 {
+      margin-bottom: 100px;
+    }
+  }
+  &-share {
+    padding: 40px 0;
+    background: url(../images/cover_1920.png) center center no-repeat;
+    background-size: cover;
+    .row {
+      align-items: center;
+      .col-text {
+        flex:  0 0 calc(100% - 450px);
+        max-width: calc(100% - 450px);
+      }
+      .col-btn {
+        flex: 0 0 450px;
+        max-width: 450px;
+      }
     }
   }
 }

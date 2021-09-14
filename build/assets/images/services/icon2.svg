@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="38px" viewBox="0 0 29 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon2</title>
+    <defs>
+        <linearGradient x1="100%" y1="100%" x2="100%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#A91889" offset="0%"></stop>
+            <stop stop-color="#150FBA" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#131415" offset="0%"></stop>
+            <stop stop-color="#160FBB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1440-tino-home-copy-2" transform="translate(-742.000000, -2590.000000)">
+            <g id="Benefits-Copy-2" transform="translate(162.000000, 2090.000000)">
+                <g id="icon2" transform="translate(580.000000, 500.000000)">
+                    <polygon id="Rectangle" fill="url(#linearGradient-1)" points="10.5 0 29 0 29 38 0 38 0 11"></polygon>
+                    <polygon id="Rectangle" fill="url(#linearGradient-2)" points="29 0 29 38 0 38"></polygon>
+                    <polygon id="Rectangle" fill="#A91889" points="10.5 0 10.5 11 0 11"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

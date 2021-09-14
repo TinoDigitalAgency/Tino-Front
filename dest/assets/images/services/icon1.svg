@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="34px" viewBox="0 0 48 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon1</title>
+    <defs>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#131415" offset="0%"></stop>
+            <stop stop-color="#160FBB" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#A91889" offset="0%"></stop>
+            <stop stop-color="#150FBA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1440-tino-home-copy-2" transform="translate(-162.000000, -2592.000000)">
+            <g id="Benefits-Copy-2" transform="translate(162.000000, 2090.000000)">
+                <g id="icon1" transform="translate(0.000000, 502.000000)">
+                    <circle id="Oval" fill="#160FBB" cx="17" cy="17" r="17"></circle>
+                    <circle id="Oval-Copy-3" fill="url(#linearGradient-1)" cx="31" cy="17" r="17"></circle>
+                    <path d="M24.0009515,1.50390915 C29.8974914,4.1720958 34,10.1069518 34,17 C34,23.8930482 29.8974914,29.8279042 24.0009515,32.4960909 C18.102974,29.8285775 14,23.8934392 14,17 C14,10.2011843 17.9911073,4.33454163 23.7582316,1.61516233 Z" id="Combined-Shape" fill="url(#linearGradient-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

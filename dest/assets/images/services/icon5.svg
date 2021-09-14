@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-cube</title>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="-2.22044605e-14%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#131415" offset="0%"></stop>
+            <stop stop-color="#160FBB" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="-2.48949813e-15%" id="linearGradient-2">
+            <stop stop-color="#131415" offset="0%"></stop>
+            <stop stop-color="#160FBB" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="78.1634479%" x2="0%" y2="78.1634479%" id="linearGradient-3">
+            <stop stop-color="#150FB9" offset="0%"></stop>
+            <stop stop-color="#060607" stop-opacity="0.614686393" offset="86.6542617%"></stop>
+            <stop stop-color="#090909" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-6.88587302%" y1="76.5556321%" x2="50%" y2="28.4561707%" id="linearGradient-4">
+            <stop stop-color="#090909" offset="0%"></stop>
+            <stop stop-color="#99188E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="12.1992937%" y1="62.8551215%" x2="99.7941478%" y2="50%" id="linearGradient-5">
+            <stop stop-color="#180FB9" offset="0%"></stop>
+            <stop stop-color="#99188E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1440-tino-home-copy-2" transform="translate(-162.000000, -3471.000000)">
+            <g id="Benefits-Copy-2" transform="translate(162.000000, 2090.000000)">
+                <g id="icon-cube" transform="translate(0.000000, 1381.000000)">
+                    <polygon id="Rectangle" fill="url(#linearGradient-1)" points="0 9 20 15.5957447 20 40 0 33.4042553"></polygon>
+                    <polygon id="Rectangle" fill="url(#linearGradient-1)" transform="translate(30.000000, 24.500000) scale(-1, 1) translate(-30.000000, -24.500000) " points="20 9 40 15.5957447 40 40 20 33.4042553"></polygon>
+                    <polygon id="Rectangle" fill="url(#linearGradient-2)" points="20 2 40 9 20 15.3333333 0 9"></polygon>
+                    <polygon id="Rectangle" fill="url(#linearGradient-3)" opacity="0.300000012" points="0 9 20 15.5957447 20 40 0 33.4042553"></polygon>
+                    <path d="M20,0 C26.5877821,0 32.0310689,4.90016709 32.8838193,11.2544602 L20,15.3333333 L7.11618072,11.2544602 C7.96893108,4.90016709 13.4122179,0 20,0 Z" id="Combined-Shape" fill="#A91889"></path>
+                    <path d="M32.8545317,11.0487192 C32.9503386,11.6852032 33,12.3368021 33,13 C33,20.1797017 27.1797017,26 20,26 L20,26 L20,15.3333333 Z" id="Combined-Shape" fill="url(#linearGradient-4)" opacity="0.800000012"></path>
+                    <path d="M7.14546826,11.0487192 L20,15.3333333 L20,26 C12.8202983,26 7,20.1797017 7,13 C7,12.3368021 7.04966137,11.6852032 7.14546826,11.0487192 Z" id="Combined-Shape" fill="url(#linearGradient-5)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

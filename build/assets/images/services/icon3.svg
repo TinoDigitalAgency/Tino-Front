@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon3</title>
+    <defs>
+        <linearGradient x1="50%" y1="-2.48949813e-15%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#131415" offset="0%"></stop>
+            <stop stop-color="#160FBB" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#A91889" offset="0%"></stop>
+            <stop stop-color="#150FBA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1440-tino-home-copy-2" transform="translate(-162.000000, -3048.000000)">
+            <g id="Benefits-Copy-2" transform="translate(162.000000, 2090.000000)">
+                <g id="icon3" transform="translate(0.000000, 958.000000)">
+                    <path d="M14,12 L24,12 C25.1045695,12 26,12.8954305 26,14 L26,36 C26,37.1045695 25.1045695,38 24,38 L14,38 C12.8954305,38 12,37.1045695 12,36 L12,14 C12,12.8954305 12.8954305,12 14,12 Z" id="Rectangle" fill="url(#linearGradient-1)"></path>
+                    <path d="M4,12 L34,12 L34,17 C34,19.209139 32.209139,21 30,21 L8,21 C5.790861,21 4,19.209139 4,17 L4,12 L4,12 Z" id="Rectangle-Copy" fill="#160FBB"></path>
+                    <path d="M0,0 L9.73523848,0 C11.1402899,-2.58103757e-16 12.4423172,0.737195335 13.1652102,1.94201698 L15,5 L15,5 L15,0 L38,0 L34,12 L4,12 L0,0 Z" id="Rectangle-Copy-2" fill="url(#linearGradient-2)"></path>
+                    <path d="M0,0 L9.73523848,0 C11.1402899,-2.58103757e-16 12.4423172,0.737195335 13.1652102,1.94201698 L15,5 L15,5 L15,0 L38,0 L4,12 L0,0 Z" id="Rectangle-Copy-2" fill="#A91889"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
