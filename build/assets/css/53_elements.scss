@@ -97,4 +97,30 @@
     opacity: .6;
   }
 }
+.project-card {
+  &-link {
+    display: block;
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  &-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 50px;
+  }
+  &__scanner {
+    .project-card-overlay {
+      background-color: rgba($blueColor, .5);
+    }
+  }
+}
 

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="34px" viewBox="0 0 46 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-Animation</title>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="-2.22044605e-14%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#131415" offset="0%"></stop>
+            <stop stop-color="#160FBB" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#A91889" offset="0%"></stop>
+            <stop stop-color="#150FBA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1440-tino-home-copy-2" transform="translate(-749.000000, -3474.000000)">
+            <g id="Benefits-Copy-2" transform="translate(162.000000, 2090.000000)">
+                <g id="Full-cycle-Development-Copy" transform="translate(580.000000, 1384.000000)">
+                    <g id="icon-Animation" transform="translate(7.000000, 0.000000)">
+                        <polygon id="Triangle" fill="url(#linearGradient-1)" transform="translate(11.000000, 17.000000) rotate(-270.000000) translate(-11.000000, -17.000000) " points="11 6 28 28 -6 28"></polygon>
+                        <polygon id="Triangle-Copy-2" fill="#160FBB" transform="translate(23.000000, 17.000000) rotate(-270.000000) translate(-23.000000, -17.000000) " points="23 6 40 28 6 28"></polygon>
+                        <polygon id="Triangle-Copy-3" fill="url(#linearGradient-2)" transform="translate(35.000000, 17.000000) rotate(-270.000000) translate(-35.000000, -17.000000) " points="35 6 52 28 18 28"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
