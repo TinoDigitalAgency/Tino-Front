@@ -35,10 +35,7 @@ gulp.task('sass',function () {
         .pipe(concat('main.min.css'))
         .pipe(sass({outputStyle:'compressed'}))
         .pipe(sass({errLogToConsole:true}))
-        .pipe(autoprefixer({
-            browsers:['last 50 versions'],
-            cascade:false
-        }))
+        .pipe(autoprefixer())
         .pipe(cssmin())
         .pipe(gulp.dest('dest/assets/css/'))
         .pipe(browserSync.reload({stream:true}));

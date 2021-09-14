@@ -14,11 +14,11 @@
   "author": "Ruslan <botnarruslan22@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "gulp-concat": "^2.6.1",
-    "gulp-order": "^1.2.0",
     "graceful-fs": {
       "version": "^4.2.4"
-    }
+    },
+    "gulp-concat": "^2.6.1",
+    "gulp-order": "^1.2.0"
   },
   "dependencies": {
     "@babel/core": "^7.13.14",
