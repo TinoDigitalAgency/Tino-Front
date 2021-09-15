@@ -1,0 +1,186 @@
+@import "./variables";
+
+.landing-section{
+
+  h1,.h1{
+    font-size: 80px;
+    font-family: Graphit;
+    line-height: 1.25;
+    color: $whiteColor;
+  }
+
+  h2,.h2{
+    font-family: Graphit;
+    font-size: 60px;
+    line-height: 1.33;
+  }
+
+  h3,.h3{
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.25;
+  }
+
+  p.large{
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.38;
+  }
+
+  .sub-title{
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: $whiteColor;
+  }
+
+  .sup-title{
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
+  &-hero{
+    padding-top: 270px;
+    position: relative;
+  }
+
+  .gradient-num{
+    &s{
+      margin-top: 115px;
+      list-style: none;
+
+      &.side-num .gradient-num-col > div{
+        padding-left: 200px;
+        padding-top: 65px;
+        margin-bottom: 140px;
+      }
+      &.top-num .gradient-num-col > div{
+        padding-top: 130px;
+      }
+    }
+
+    &-col {
+
+      & > div{
+        position: relative;
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 1.4;
+        color: rgba($whiteColor, 0.6);
+      }
+
+
+      .number-grad{
+        background: linear-gradient(to left, #150fba, #a91889);
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-width: 2px;
+        font-size: 120px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.08;
+        letter-spacing: normal;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 4px transparent;
+
+        &-hidden{
+          position: absolute;
+          left: 0;
+          top: 0;
+          font-family: Graphit-Light;
+          border-width: 2px;
+          font-size: 120px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.08;
+          letter-spacing: normal;
+          color: $mainBlack
+        }
+      }
+    }
+  }
+
+}
+
+.development-page{
+  // ---- Section 1 ---- //
+  .landing-section-hero{
+    background-image: url('../images/landings/back-1.png');
+    background-repeat: no-repeat;
+    background-size: 600px 860px;
+    background-position: 100% 240px;
+
+    h1{
+      font-family: Graphit-Medium;
+      font-weight: 500;
+
+    }
+
+    &::before{
+      content: '';
+      width: 468px;
+      height: 468px;
+      opacity: 0.1;
+      border: solid 1px #fff7e7;
+      position: absolute;
+      bottom: 510px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+    }
+
+    .gradient-num-col{
+      &:nth-of-type(2) > div:nth-of-type(1) {
+        margin-top: 140px;
+      }
+    }
+  }
+
+  .hand-icon img{
+    margin-bottom: -2px;
+    margin-left: 10px;
+  }
+
+  // ---- Section 2 ---- //
+  .section-2{
+    background-image: url('../images/landings/back-2.png');
+    background-repeat: no-repeat;
+    background-size: 55% auto;
+    background-position: 100% 0;
+    position: relative;
+
+    &::before{
+      content: '';
+      width: 440px;
+      height: 910px;
+      background-image: url('../images/landings/back-3.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: -250px;
+      right: 0;
+    }
+
+    &-title{
+      width: 45%;
+    }
+
+    .skew-wrapper{
+      max-width: 315px;
+      padding-left: 63px;
+      padding-top: 105px;
+      position: relative;
+
+      .skew-line{
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}

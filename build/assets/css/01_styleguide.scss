@@ -7,20 +7,23 @@ body {
   color: #fff7e7;
 }
 
+// FONT SIZES
+
 h3, .h3 {
   font-size: 40px;
   line-height: 50px;
   color: $whiteColor;
   margin-bottom: 30px;
-  font-family: Graphit-Light;
 }
 
+// LAYOUTS
 .container {
   padding-left: 30px;
   padding-right: 30px;
   width: 100%;
   max-width: 1180px;
   margin: 0 auto;
+
   @media (max-width: 1200px) {
     max-width: 990px;
   }
@@ -31,18 +34,21 @@ h3, .h3 {
     max-width: 100%;
   }
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
   margin-left: -22.5px;
   margin-right: -22.5px;
 }
+
 .col {
   padding-left: 22.5px;
   padding-right: 22.5px;
   flex: 0 0 auto;
   max-width: 100%;
 }
+
 .col-6 {
   padding-left: 22.5px;
   padding-right: 22.5px;
@@ -50,16 +56,88 @@ h3, .h3 {
   max-width: 50%;
 }
 
+.col-3 {
+  padding-left: 22.5px;
+  padding-right: 22.5px;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+// PADDINGS
 .p-tb-150{
   padding-top: 150px;
   padding-bottom: 150px;
+}
+.pt-150{
+  padding-top: 150px;
 }
 .p-lr-135{
   padding-left: 135px;
   padding-right: 135px;
 }
+.mb-20{
+  margin-bottom: 20px;
+}
+.mt-40{
+  margin-top: 40px;
+}
+.mb-60{
+  margin-bottom: 60px;
+}
+.mt-250{
+  margin-top: 250px;
+}
+.mt-200{
+  margin-top: 200px;
+}
 
+.m-20{
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.p-20{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.mlr-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+.ml-auto{
+  margin-left: auto;
+}
+
+// COLORS
+.black-clr{
+  color: $mainBlack;
+}
+
+
+// LAYOUTS
 .layout-row{
   display: flex;
 
+  &.wrap{
+    flex-wrap: wrap;
+  }
+}
+.layout-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.align-end{
+  align-items: flex-end;
+}
+
+.flex{
+  flex: auto;
+}
+
+
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
