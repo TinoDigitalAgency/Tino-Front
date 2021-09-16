@@ -98,6 +98,7 @@
     padding: 40px 0;
     background: url(../images/cover_1920.png) center center no-repeat;
     background-size: cover;
+    margin-bottom: 100px;
     .row {
       align-items: center;
       .col-text {
@@ -108,6 +109,11 @@
         flex: 0 0 450px;
         max-width: 450px;
       }
+    }
+  }
+  &-projects {
+    .btn-group {
+      padding-top: 55px;
     }
   }
 }
