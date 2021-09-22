@@ -1,4 +1,26 @@
 @import './variables.scss';
+
+.viewport {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.scroll-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 10;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
 .app-wrapper {
   width: 100%;
   overflow: hidden;
@@ -41,14 +63,7 @@
         transition: all 400ms;
         -webkit-text-stroke: 2px $whiteColor;
       }
-
       cursor: pointer;
-      &:hover {
-        span {
-          -webkit-text-stroke: 2px $whiteColor;
-          -webkit-text-fill-color: transparent;
-        }
-      }
     }
     .showreal-block {
       position: absolute;
@@ -114,6 +129,22 @@
   &-projects {
     .btn-group {
       padding-top: 55px;
+    }
+  }
+  &-faq {
+    .content-image {
+      text-align: center;
+      margin-top: 100px;
+      img {
+        max-height: 520px;
+      }
+    }
+  }
+  &-awards {
+    .h1 {
+      font-size: 120px;
+      line-height: 130px;
+      margin-bottom: 60px;
     }
   }
 }

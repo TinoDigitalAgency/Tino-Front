@@ -26,4 +26,17 @@ document.addEventListener('DOMContentLoaded', function(){
             disableOnInteraction: false,
         }
     });
+
+    const teamSlider = new Swiper(".team-slider", {
+        loop: true,
+        speed: 1000,
+        effect: "fade",
+        autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".team-next"
+        },
+    });
 });

@@ -21,3 +21,12 @@
     right: 100%;
   }
 }
+
+@keyframes svgRoundAnimation {
+  from {
+    stroke-dashoffset: 370.5px;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
