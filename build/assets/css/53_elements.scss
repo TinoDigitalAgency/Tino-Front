@@ -1,3 +1,5 @@
+@import "variables";
+
 .hero-line-animation {
   margin-top: 30px;
   width: 177px;
@@ -143,5 +145,68 @@
     border-image-source: linear-gradient(185deg, #150fba, #a91889);
     border-image-slice: 1;
     transform: skewX(-20deg);
+  }
+}
+
+.full-screen-img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.toggle{
+  padding: 40px 0;
+  position: relative;
+  border-bottom: 1px solid rgba($whiteColor, 0.15);
+
+  &::after{
+    content: '';
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    height: 1px;
+    position: absolute;
+    background-image: linear-gradient(to left, #150fba, #a91889);
+    transition: all 300ms ease;
+  }
+
+  &-name{
+    padding-right: 40px;
+    position: relative;
+    cursor: pointer;
+
+    &::before{
+      content: '';
+      width: 20px;
+      height: 1px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $whiteColor;
+    }
+    &::after{
+      content: '';
+      width: 1px;
+      height: 20px;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translate(50%, -50%);
+      background-color: $whiteColor;
+    }
+  }
+
+  &-descriptions{
+    max-width: 960px;
+    opacity: 0.6;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 300ms ease;
+  }
+
+  &.active .toggle-descriptions{
+    max-height: none;
   }
 }

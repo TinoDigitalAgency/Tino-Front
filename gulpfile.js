@@ -56,7 +56,7 @@ gulp.task('jsmin', function () {
 });
 
 gulp.task('svg|png|jpg', function () {
-   gulp.src('build/assets/images/*')
+   gulp.src('build/assets/images/**/*')
        .pipe(gulp.dest('dest/assets/images/'))
        .pipe(browserSync.reload({stream:true}));
 });

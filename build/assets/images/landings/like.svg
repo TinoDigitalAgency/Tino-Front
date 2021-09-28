@@ -1,0 +1,32 @@
+<svg width="29" height="30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <filter x="-11%" y="-10%" width="121.9%" height="120%" filterUnits="objectBoundingBox" id="b">
+            <feGaussianBlur stdDeviation="2.5" in="SourceAlpha" result="shadowBlurInner1"/>
+            <feOffset dx="1" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/>
+            <feColorMatrix values="0 0 0 0 0.880594336 0 0 0 0 0.200557201 0 0 0 0 0.79496003 0 0 0 1 0" in="shadowInnerInner1" result="shadowMatrixInner1"/>
+            <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner2"/>
+            <feOffset dx="-2" dy="-2" in="shadowBlurInner2" result="shadowOffsetInner2"/>
+            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"/>
+            <feColorMatrix values="0 0 0 0 0.050601382 0 0 0 0 0.0274733392 0 0 0 0 0.595762391 0 0 0 0.5 0" in="shadowInnerInner2" result="shadowMatrixInner2"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixInner1"/>
+                <feMergeNode in="shadowMatrixInner2"/>
+            </feMerge>
+        </filter>
+        <filter x="-78.6%" y="-110%" width="257.1%" height="320%" filterUnits="objectBoundingBox" id="c">
+            <feGaussianBlur stdDeviation="5" in="SourceGraphic"/>
+        </filter>
+        <path d="M1.083 13.636c0-1.818 1.364-2.727 3.637-2.727h5.272a1 1 0 0 0 1-1V2.727a2.727 2.727 0 0 1 5.455 0v1.598c0 2.47.981 4.838 2.727 6.584l2.142 2.142a2 2 0 0 0 1.414.585h1.899a2.727 2.727 0 0 1 2.727 2.728v6.818c0 .753-.61 1.363-1.364 1.363h-.12a3 3 0 0 0-2.122.88l-.485.484a11.884 11.884 0 0 1-3.088 2.226l-1.003.501A12.917 12.917 0 0 1 13.398 30H4.144a2 2 0 0 1-.805-.17c-.837-.367-1.256-.977-1.256-1.83 0-1 .334-1.667 1-2-1.333-.333-2.166-1.167-2.5-2.5-.256-1.027.244-1.86 1.5-2.5-1.666-.424-2.333-1.364-2-2.818.334-1.455 1.273-2.212 2.819-2.273-1.213-.303-1.819-1.06-1.819-2.273z" id="a"/>
+    </defs>
+    <g transform="translate(.917)" fill="none" fill-rule="evenodd">
+        <mask id="d" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <g>
+            <use fill="#A91889" xlink:href="#a"/>
+            <use fill="#000" filter="url(#b)" xlink:href="#a"/>
+        </g>
+        <ellipse fill="#160FBB" filter="url(#c)" mask="url(#d)" cx="25.629" cy="20.208" rx="9.545" ry="6.818"/>
+    </g>
+</svg>

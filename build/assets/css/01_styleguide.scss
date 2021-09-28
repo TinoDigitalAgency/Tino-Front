@@ -90,6 +90,9 @@ h3, .h3 {
 .mt-200{
   margin-top: 200px;
 }
+.mt-100{
+  margin-top: 100px;
+}
 
 .m-20{
   margin-left: -20px;
@@ -129,15 +132,25 @@ h3, .h3 {
 .align-end{
   align-items: flex-end;
 }
+.align-center{
+  align-items: center;
+}
 
 .flex{
   flex: auto;
 }
 
-
-
 img{
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+}
+
+.link-btn{
+  display: inline-block;
+  font-size: 20px;
+  line-height: 1;
+  color: $mainBlack;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba($mainBlack, 0.25);
 }
