@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>smile1</title>
+    <defs>
+        <circle id="path-1" cx="25" cy="25" r="25"></circle>
+        <filter x="-7.0%" y="-7.0%" width="114.0%" height="114.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="3" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="1" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.783269025   0 0 0 0 0.0739529167   0 0 0 0 0.693947738  0 0 0 1 0" type="matrix" in="shadowInnerInner1" result="shadowMatrixInner1"></feColorMatrix>
+            <feGaussianBlur stdDeviation="2.5" in="SourceAlpha" result="shadowBlurInner2"></feGaussianBlur>
+            <feOffset dx="-2" dy="-2" in="shadowBlurInner2" result="shadowOffsetInner2"></feOffset>
+            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.050601382   0 0 0 0 0.0274733392   0 0 0 0 0.595762391  0 0 0 0.5 0" type="matrix" in="shadowInnerInner2" result="shadowMatrixInner2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-65.2%" y="-88.2%" width="230.4%" height="276.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-56.2%" y="-72.0%" width="212.5%" height="244.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="6" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1440-tino-home-copy-2" transform="translate(-485.000000, -7673.000000)">
+            <g id="Our-Approach" transform="translate(162.000000, 7082.000000)">
+                <g id="smile1" transform="translate(323.000000, 591.000000)">
+                    <g id="Oval">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Mask">
+                            <use fill="#A91889" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                        </g>
+                        <ellipse fill="#160FBB" filter="url(#filter-4)" mask="url(#mask-2)" cx="44" cy="47" rx="23" ry="17"></ellipse>
+                        <ellipse id="Oval-Copy" fill="#DC1DB4" filter="url(#filter-5)" mask="url(#mask-2)" cx="-12" cy="28.5" rx="16" ry="12.5"></ellipse>
+                    </g>
+                    <path d="M14.6376812,23 C13.2560386,32.3333333 14.1195652,37 17.2282609,37 C20.3369565,37 22.9275362,32.6666667 25,24" id="Path-6" stroke="#090909" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M10,13 C12.9248233,13.6241405 15.0371957,14.2482809 16.3371171,14.8724214 C18.2869993,15.8086321 15.362176,17.6810535 14.8747055,16.7448428 C14.5497251,16.1207023 14.3872349,15.652597 14.3872349,15.3405268" id="Path-7" stroke="#090909" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M27,18 C29.9248233,18.6241405 32.0371957,19.2482809 33.3371171,19.8724214 C35.2869993,20.8086321 32.362176,22.6810535 31.8747055,21.7448428 C31.5497251,21.1207023 31.3872349,20.652597 31.3872349,20.3405268" id="Path-7-Copy" stroke="#090909" stroke-width="2" stroke-linecap="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

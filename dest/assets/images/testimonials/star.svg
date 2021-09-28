@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="51px" viewBox="0 0 50 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>star</title>
+    <g id="home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1440-tino-home-copy-2" transform="translate(-721.000000, -6253.000000)" fill="#A91889" stroke="#0A0A0A" stroke-width="5">
+            <g id="Benefits" transform="translate(162.000000, 6262.000000)">
+                <g id="star-5" transform="translate(439.000000, 0.000000)">
+                    <path d="M143.42064,-3.40389166 L149.510774,8.98879123 L163.060438,10.983694 L153.268263,20.5849187 L155.602695,34.1933077 L143.446979,27.7552414 L131.31752,34.160474 L133.62025,20.5716702 L123.801655,10.9436027 L137.356663,8.97658801 L143.42064,-3.40389166 Z" id="star" transform="translate(143.435577, 15.937953) rotate(10.000000) translate(-143.435577, -15.937953) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

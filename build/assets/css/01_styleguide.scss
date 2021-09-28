@@ -9,11 +9,26 @@ body {
 
 // FONT SIZES
 
+h1, .h1 {
+  font-family: Graphit-Regular;
+  font-size: 80px;
+  color: $whiteColor;
+  letter-spacing: 0;
+  line-height: 80px;
+}
+h2, .h2 {
+  font-family: Graphit-Regular;
+  font-size: 60px;
+  color: $whiteColor;
+  letter-spacing: 0;
+  line-height: 80px;
+}
 h3, .h3 {
   font-size: 40px;
   line-height: 50px;
   color: $whiteColor;
   margin-bottom: 30px;
+  font-family: Graphit-Light;
 }
 
 // LAYOUTS
@@ -35,6 +50,9 @@ h3, .h3 {
   }
 }
 
+.text-center {
+  text-align: center;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
