@@ -9,7 +9,7 @@
     <link href="./assets/fonts/tino-font/style.css" rel="stylesheet">
 </head>
 <body>
-
+<div id="menu-bg"></div>
 <header class="header">
     <div class="header-inner">
         <div class="logo">
@@ -18,15 +18,15 @@
             </a>
         </div>
         <div class="header-menu">
-            <ul class="menu">
+            <ul class="menu" id="header-menu">
                 <li class="menu-item">
                     <a href="#" class="menu-link">Case studies</a>
                 </li>
-                <li class="menu-item menu-item__has-child">
-                    <a href="#" class="menu-link menu-link__has-child">Services</a>
+                <li class="menu-item menu-item__has-child" >
+                    <a href="#" class="menu-link menu-link__has-child" data-menu="service-submenu">Services</a>
                 </li>
-                <li class="menu-item menu-item__has-child">
-                    <a href="#" class="menu-link menu-link__has-child">Industries</a>
+                <li class="menu-item menu-item__has-child" >
+                    <a href="#" class="menu-link menu-link__has-child" data-menu="industries-submenu">Industries</a>
                 </li>
             </ul>
             <div class="main-menu-btn">
@@ -38,6 +38,70 @@
         </div>
     </div>
 </header>
+<div class="side-menu-wrapper">
+    <div class="side-menu">
+        <div class="side-menu-content">
+            <div class="side-menu-list" id="service-submenu">
+                <a href="#" class="side-menu-item side-menu-item-1">
+                    <span class="side-menu-link">Development</span>
+                    <span class="side-menu-image">
+                        <img src="./assets/images/menu/Healthcare.png" alt="">
+                    </span>
+                </a>
+                <a href="#" class="side-menu-item side-menu-item-2">
+                    <span class="side-menu-link">Design</span>
+                    <span class="side-menu-image">
+                        <img src="./assets/images/menu/Healthcare.png" alt="">
+                    </span>
+                </a>
+                <a href="#" class="side-menu-item side-menu-item-3">
+                    <span class="side-menu-link">Ecommerce</span>
+                    <span class="side-menu-image">
+                        <img src="./assets/images/menu/Healthcare.png" alt="">
+                    </span>
+                </a>
+                <a href="#" class="side-menu-item side-menu-item-4">
+                    <span class="side-menu-link">Gastronomy</span>
+                    <span class="side-menu-image">
+                        <img src="./assets/images/menu/Healthcare.png" alt="">
+                    </span>
+                </a>
+            </div>
+            <div class="side-menu-list" id="industries-submenu">
+                <a href="#" class="side-menu-item side-menu-item-1">
+                    <span class="side-menu-link">Healthcare</span>
+                    <span class="side-menu-image">
+                        <img src="./assets/images/menu/Healthcare.png" alt="">
+                    </span>
+                </a>
+                <a href="#" class="side-menu-item side-menu-item-2">
+                    <span class="side-menu-link">Finance</span>
+                    <span class="side-menu-image">
+                        <img src="./assets/images/menu/Healthcare.png" alt="">
+                    </span>
+                </a>
+                <a href="#" class="side-menu-item side-menu-item-3">
+                    <span class="side-menu-link">Ecommerce</span>
+                    <span class="side-menu-image">
+                        <img src="./assets/images/menu/Healthcare.png" alt="">
+                    </span>
+                </a>
+                <a href="#" class="side-menu-item side-menu-item-4">
+                    <span class="side-menu-link">Gastronomy</span>
+                    <span class="side-menu-image">
+                        <img src="./assets/images/menu/Healthcare.png" alt="">
+                    </span>
+                </a>
+                <a href="#" class="side-menu-item side-menu-item-5">
+                    <span class="side-menu-link">Telemedicine</span>
+                    <span class="side-menu-image">
+                        <img src="./assets/images/menu/Healthcare.png" alt="">
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
     <main class="app-wrapper viewport">
         <div id="scroll-container" class="scroll-container">
             <section class="section section-hero">

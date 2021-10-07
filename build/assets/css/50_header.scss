@@ -59,11 +59,24 @@
   align-items: center;
   &-item {
     padding: 0 10px;
+
     &__has-child {
       padding-right: 20px;
       .menu-link {
         padding-right: 16px;
         position: relative;
+        &.muted {
+          opacity: .25;
+          &:hover {
+            opacity: 1;
+          }
+        }
+        &.active {
+          opacity: 1;
+          &::before {
+            transform: rotate(-180deg);
+          }
+        }
         &::before {
           content: '';
           width: 0;
@@ -75,6 +88,7 @@
           right: 0;
           top: 50%;
           margin-top: -2px;
+          transition: all 400ms;
         }
       }
     }
@@ -84,5 +98,15 @@
     padding: 0 10px;
     color: #fff7e7;
     font-family: Graphit-Light;
+    transition: all 400ms;
+    &.muted {
+      opacity: .25;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &:hover {
+      opacity: .8;
+    }
   }
 }
