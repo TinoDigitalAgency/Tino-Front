@@ -1,9 +1,14 @@
 .header {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   z-index: 9;
+  &.sticky {
+    .header-inner {
+      padding: 30px 50px;
+    }
+  }
   &-inner {
     padding: 50px;
     display: flex;
