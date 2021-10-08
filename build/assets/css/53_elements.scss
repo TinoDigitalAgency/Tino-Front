@@ -422,3 +422,8 @@
     }
   }
 }
+
+.tilt-card {
+  perspective: 900px;
+  transform-origin: center center -10;
+}
