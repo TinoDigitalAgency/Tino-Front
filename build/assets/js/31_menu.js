@@ -5,7 +5,6 @@ const menuImageHandler = (e) => {
     const hoveredItem           = e.target;
     const hoveredItemImage      = hoveredItem.childNodes[3];
     if(hoveredItem.classList.contains('side-menu-item')) {
-        console.log(menuWrapperLeftOffset);
         const hoveredItemImageOffsetLeft = e.clientX - menuWrapperLeftOffset - 70;
         if(hoveredItemImageOffsetLeft > 0) {
             hoveredItemImage.style.left = hoveredItemImageOffsetLeft + 'px'
@@ -42,8 +41,6 @@ const menuToggle = (e) => {
         targetElement.classList.add('active');
         changeSubmenu(subMenu);
     }
-
-    console.log(e)
 }
 const closeSubmenu = () => {
     const menuBg = document.querySelector('#menu-bg');

@@ -27,15 +27,12 @@ function onLoad() {
 }
 
 function updateScroller() {
-
     var resized = scroller.resizeRequest > 0;
-
     if (resized) {
         var height = scroller.target.clientHeight;
         body.style.height = height + "px";
         scroller.resizeRequest = 0;
     }
-
     var scrollY = window.pageYOffset || html.scrollTop || body.scrollTop || 0;
 
     scroller.endY = scrollY;
@@ -51,6 +48,18 @@ function updateScroller() {
 
     requestId = scroller.scrollRequest > 0 ? requestAnimationFrame(updateScroller) : null;
 }
+
+const goToSecondScreen = () => {
+    scroller.scrollRequest = 1;
+    scroller.y = window.innerHeight;
+    html.scrollTop = window.innerHeight;
+    TweenLite.to(scroller.target, {
+        y: -scroller.y
+    });
+    requestId = null
+}
+
+document.getElementById('scroll-down').addEventListener('click', goToSecondScreen)
 
 function onScroll() {
     scroller.scrollRequest++;

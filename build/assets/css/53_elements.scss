@@ -70,11 +70,11 @@
 }
 .about-text {
   p {
-    font-family: Graphit-Regular;
+    font-family: Graphit;
     font-size: 60px;
     color: #FFF7E7;
     letter-spacing: 0;
-    line-height: 80px;
+    line-height: 35px;
     margin-bottom: 0;
     & + p {
       margin-top: 30px;
@@ -126,7 +126,7 @@
     position: absolute;
     right: 50px;
     top: 50px;
-    font-family: Graphit-Regular;
+    font-family: Graphit;
     font-size: 10px;
     color: #FFF7E7;
     letter-spacing: 5px;
@@ -201,14 +201,14 @@
       }
     }
     .name {
-      font-family: Graphit-Regular;
+      font-family: Graphit;
       font-size: 20px;
       color: #FFF7E7;
       letter-spacing: 0;
       line-height: 20px;
     }
     .position {
-      font-family: Graphit-Regular;
+      font-family: Graphit;
       font-size: 16px;
       color: #FFF7E7;
       letter-spacing: 0;
@@ -274,7 +274,7 @@
     }
   }
   &-text {
-    font-family: Graphit-Regular;
+    font-family: Graphit;
     font-size: 25px;
     color: #FFF7E7;
     letter-spacing: 0;
@@ -327,7 +327,7 @@
   }
 }
 .gradient-counter {
-  font-family: Graphit-Regular;
+  font-family: Graphit;
   font-size: 120px;
   letter-spacing: 0;
   line-height: 130px;
@@ -418,7 +418,7 @@
     padding-bottom: 58px;
     span {
       transform: translateY(46px);
-      font-family: Graphit-Regular;
+      font-family: Graphit;
     }
   }
 }
