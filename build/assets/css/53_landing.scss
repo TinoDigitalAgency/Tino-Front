@@ -291,6 +291,19 @@
   .section-share{
     margin-bottom: 0!important;
   }
+
+  .strategy-section{
+    padding-bottom: 510px;
+  }
+
+  .prototype-section{
+    .outbox-bg{
+      margin-top: -510px;
+    }
+    &__title{
+      min-width: 460px;
+    }
+  }
 }
 
 .development-page{

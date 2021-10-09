@@ -58,6 +58,9 @@ h3, .h3 {
   flex-wrap: wrap;
   margin-left: -22.5px;
   margin-right: -22.5px;
+  &.no-wrap{
+    flex-wrap: nowrap;
+  }
 }
 
 .col {
@@ -96,6 +99,9 @@ h3, .h3 {
 .mb-20{
   margin-bottom: 20px;
 }
+.mb-30{
+  margin-bottom: 30px;
+}
 .mt-40{
   margin-top: 40px;
 }
@@ -114,21 +120,35 @@ h3, .h3 {
 .mt-100{
   margin-top: 100px;
 }
+.mt-140{
+  margin-top: 140px;
+}
 .mt-80{
   margin-top: 80px;
 }
+.mt-90{
+  margin-top: 90px;
+}
 
-.m-20{
+.row-m-20{
   margin-left: -20px;
   margin-right: -20px;
+}
+.row-m-25{
+  margin-left: -25px;
+  margin-right: -25px;
+}
+.row-m-40{
+  margin-left: -40px;
+  margin-right: -40px;
 }
 .p-20{
   padding-left: 20px;
   padding-right: 20px;
 }
-.m-40{
-  margin-left: -40px;
-  margin-right: -40px;
+.p-25{
+  padding-left: 25px;
+  padding-right: 25px;
 }
 .p-40{
   padding-left: 40px;
@@ -143,13 +163,21 @@ h3, .h3 {
   margin-left: auto;
 }
 
+.gray-text{
+  color: rgba($whiteColor, 0.6);
+}
+
 // COLORS
 .black-clr{
   color: $mainBlack;
 
-  h2,.h2{
+  h2,.h2, h3,.h3{
     color: $mainBlack;
   }
+  .gray-text{
+    color: rgba($mainBlack, 0.6);
+  }
+
 }
 
 

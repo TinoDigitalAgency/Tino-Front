@@ -52,33 +52,9 @@
   }
 }
 
-.team-next {
-  width: 120px;
-  height: 120px;
-  //border: 1px rgba($whiteColor, .6) solid;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 40px;
-  color: $whiteColor;
-  cursor: pointer;
-  z-index: 3;
-  svg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: rotate(-90deg);
-    .loader {
-      stroke-dashoffset: 370.5px;
-      stroke-dasharray: 370.5px;
-      animation: 6s svgRoundAnimation forwards infinite linear;
-    }
-  }
-}
 .team-slider-wrapper {
   position: relative;
-  .team-next {
+  .arrow-button-next {
     position: absolute;
     right: 0;
     top: 0;
@@ -97,6 +73,40 @@
     opacity: 0 !important;
     &.swiper-slide-active {
       opacity: 1 !important;
+    }
+  }
+}
+
+.practice-slider-wrapper{
+  position: relative;
+  .practice-next {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .round-bg {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    border: 1px rgba($whiteColor, .1) solid;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+  }
+  //.swiper-slide {
+  //  opacity: 0 !important;
+  //  &.swiper-slide-active {
+  //    opacity: 1 !important;
+  //  }
+  //}
+
+  .practice-slider-content{
+    &>div{
+      width: 50%;
+    }
+    &__left{
+      padding-right: 125px;
     }
   }
 }
