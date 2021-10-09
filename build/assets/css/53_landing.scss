@@ -40,6 +40,15 @@
     line-height: 1.6;
   }
 
+  .gray-subtext{
+    font-family: Graphit-Light;
+    font-size: 25px;
+    color: rgba(white, 0.5);
+    span{
+      font-family: Graphit-Medium;
+    }
+  }
+
   p{
     font-size: 25px;
     line-height: 1.6;
@@ -276,6 +285,11 @@
       margin-bottom: 0;
       max-width: 860px;
     }
+  }
+
+  // ---- Section share ---- //
+  .section-share{
+    margin-bottom: 0!important;
   }
 }
 

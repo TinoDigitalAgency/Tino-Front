@@ -55,11 +55,36 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 const toggleActiveClass = (selector, classToggled, isArray = false) => {
-    if (!isArray) {
-        document.querySelector(selector).classList.add(classToggled)
-    } else {
-        document.querySelectorAll(selector).forEach(value => {
-            value.classList.add(classToggled);
-        })
+    if (document.querySelector(selector)) {
+        if (!isArray) {
+            document.querySelector(selector).classList.add(classToggled)
+        } else {
+            document.querySelectorAll(selector).forEach(value => {
+                value.classList.add(classToggled);
+            })
+        }
     }
 }
+
+// Toggle
+const removeTgl = function () {
+    document.querySelectorAll('.toggle').forEach((e) => {
+        if (e.classList.contains('active')) {
+            e.querySelector('.toggle-descriptions').style.height = `${0}px`;
+            e.classList.remove('active');
+        }
+    });
+};
+document.querySelectorAll('.toggle').forEach((e) => {
+    e.addEventListener('click', () => {
+        if (e.classList.contains('active')) {
+            e.classList.remove('active');
+            e.querySelector('.toggle-descriptions').style.height = `${0}px`;
+        } else {
+            removeTgl();
+            const height = e.querySelector('.toggle-descriptions').scrollHeight;
+            e.querySelector('.toggle-descriptions').style.height = `${height}px`;
+            e.classList.add('active');
+        }
+    })
+});
