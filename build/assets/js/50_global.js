@@ -1,4 +1,17 @@
+console.log(window.performance);
 document.addEventListener('DOMContentLoaded', function(){
+    toggleActiveClass('.hero-line-animation', 'active');
+    toggleActiveClass('.fadeAnim', 'animated', true);
+
+    const boxes = gsap.utils.toArray('.scrollAlfaActivated');
+    boxes.forEach((box, i) => {
+        const anim = gsap.fromTo(box, { autoAlpha: 0, y: 150 }, { duration: 1, autoAlpha: 1, y: 0 });
+        ScrollTrigger.create({
+            trigger: box,
+            animation: anim,
+            toggleActions: 'play none none none',
+            once: true });
+    });
     const runStroke = new Swiper('.run-stroke', {
         slidesPerView: 'auto',
         spaceBetween: 80,
@@ -40,3 +53,13 @@ document.addEventListener('DOMContentLoaded', function(){
         },
     });
 });
+
+const toggleActiveClass = (selector, classToggled, isArray = false) => {
+    if (!isArray) {
+        document.querySelector(selector).classList.add(classToggled)
+    } else {
+        document.querySelectorAll(selector).forEach(value => {
+            value.classList.add(classToggled);
+        })
+    }
+}

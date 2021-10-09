@@ -1,0 +1,6 @@
+.fadeAnim {
+  opacity: 0;
+  &.animated {
+    animation: fadeAnim 1s forwards;
+  }
+}
