@@ -99,6 +99,9 @@ h3, .h3 {
 .mt-40{
   margin-top: 40px;
 }
+.mt-60{
+  margin-top: 60px;
+}
 .mb-60{
   margin-bottom: 60px;
 }
@@ -111,6 +114,9 @@ h3, .h3 {
 .mt-100{
   margin-top: 100px;
 }
+.mt-80{
+  margin-top: 80px;
+}
 
 .m-20{
   margin-left: -20px;
@@ -120,6 +126,15 @@ h3, .h3 {
   padding-left: 20px;
   padding-right: 20px;
 }
+.m-40{
+  margin-left: -40px;
+  margin-right: -40px;
+}
+.p-40{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .mlr-auto{
   margin-left: auto;
   margin-right: auto;
@@ -162,13 +177,5 @@ img{
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-}
-
-.link-btn{
-  display: inline-block;
-  font-size: 20px;
-  line-height: 1;
-  color: $mainBlack;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba($mainBlack, 0.25);
+  display: block;
 }

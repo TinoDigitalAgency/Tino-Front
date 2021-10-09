@@ -94,7 +94,8 @@
                     </div>
                     <div class="layout-row">
                         <div class="flex"></div>
-                        <a href="" class="link-btn mt-40">View All Projects</a>
+                        <a href="" class="more-link mt-40">View All Projects</a>
+<!--                        <a href="" class="link-btn mt-40">View All Projects</a>-->
                     </div>
                 </div>
             </div>
@@ -105,45 +106,70 @@
         <div class="container">
             <h2>Move from ideas to sustainable prototypes</h2>
             <h3 class="mt-100">UX stands for User Experience. It encapsulates the experience that a user gets while interacting with your product, starting with your mobile interface.</h3>
-            <div class="toggle">
+            <div class="toggle mt-60">
                 <div class="toggle-name h3">
                     Wireframining
                 </div>
-                <p class="toggle-descriptions">
-                    Wireframes of the interface is the principal concern of a designer. UI / UX is a combination of solutions designed to meet the user's goals on a web resource as quickly and efficiently as possible by taking into account behavioral factors and a comfortable visual environment. Our experience shows that a harmonious combination of UI and UX creates a perfect design. We always strive to give your products the greatest ease of use and user-friendliness possible.
-                </p>
+                <div class="toggle-descriptions">
+                    <p>Wireframes of the interface is the principal concern of a designer. UI / UX is a combination of solutions designed to meet the user's goals on a web resource as quickly and efficiently as possible by taking into account behavioral factors and a comfortable visual environment. Our experience shows that a harmonious combination of UI and UX creates a perfect design. We always strive to give your products the greatest ease of use and user-friendliness possible.</p>
+                </div>
             </div>
             <div class="toggle">
                 <div class="toggle-name h3">
                     Wireframining
                 </div>
-                <p class="toggle-descriptions">
-                    Wireframes of the interface is the principal concern of a designer. UI / UX is a combination of solutions designed to meet the user's goals on a web resource as quickly and efficiently as possible by taking into account behavioral factors and a comfortable visual environment. Our experience shows that a harmonious combination of UI and UX creates a perfect design. We always strive to give your products the greatest ease of use and user-friendliness possible.
-                </p>
+                <div class="toggle-descriptions">
+                    <p>Wireframes of the interface is the principal concern of a designer. UI / UX is a combination of solutions designed to meet the user's goals on a web resource as quickly and efficiently as possible by taking into account behavioral factors and a comfortable visual environment. Our experience shows that a harmonious combination of UI and UX creates a perfect design. We always strive to give your products the greatest ease of use and user-friendliness possible.</p>
+                </div>
             </div>
             <div class="toggle">
                 <div class="toggle-name h3">
                     Wireframining
                 </div>
-                <p class="toggle-descriptions">
-                    Wireframes of the interface is the principal concern of a designer. UI / UX is a combination of solutions designed to meet the user's goals on a web resource as quickly and efficiently as possible by taking into account behavioral factors and a comfortable visual environment. Our experience shows that a harmonious combination of UI and UX creates a perfect design. We always strive to give your products the greatest ease of use and user-friendliness possible.
-                </p>
+                <div class="toggle-descriptions">
+                    <p>Wireframes of the interface is the principal concern of a designer. UI / UX is a combination of solutions designed to meet the user's goals on a web resource as quickly and efficiently as possible by taking into account behavioral factors and a comfortable visual environment. Our experience shows that a harmonious combination of UI and UX creates a perfect design. We always strive to give your products the greatest ease of use and user-friendliness possible.</p>
+                </div>
             </div>
             <div class="toggle">
                 <div class="toggle-name h3">
                     Wireframining
                 </div>
-                <p class="toggle-descriptions">
-                    Wireframes of the interface is the principal concern of a designer. UI / UX is a combination of solutions designed to meet the user's goals on a web resource as quickly and efficiently as possible by taking into account behavioral factors and a comfortable visual environment. Our experience shows that a harmonious combination of UI and UX creates a perfect design. We always strive to give your products the greatest ease of use and user-friendliness possible.
-                </p>
+                <div class="toggle-descriptions">
+                    <p>Wireframes of the interface is the principal concern of a designer. UI / UX is a combination of solutions designed to meet the user's goals on a web resource as quickly and efficiently as possible by taking into account behavioral factors and a comfortable visual environment. Our experience shows that a harmonious combination of UI and UX creates a perfect design. We always strive to give your products the greatest ease of use and user-friendliness possible.</p>
+                </div>
+            </div>
+
+            <div class="row m-40 mt-100">
+                <div class="col-6 p-40">
+                    <img src="assets/images/landings/ui-ix/section4-1.jpg" srcset="assets/images/landings/ui-ix/section4-1@2x.jpg 2x" alt="">
+                </div>
+                <div class="col-6 p-40 mt-80">
+                    <img src="assets/images/landings/ui-ix/section4-2.jpg" srcset="assets/images/landings/ui-ix/section4-2@2x.jpg 2x" alt="">
+                </div>
             </div>
         </div>
     </div>
 </div>
+<section class="section section-share">
+    <div class="container">
+        <div class="row row-share">
+            <div class="col col-text">
+                <p>Satisfy users' expectations and influence their behaviors on the buyer's journey with strategic design.</p>
+            </div>
+            <div class="col col-btn">
+                <button class="btn-bordered">
+                    <span>Share your project idea</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
 <script>
     const removeTgl = function (){
         document.querySelectorAll('.toggle').forEach((e) => {
             if (e.classList.contains('active')){
+                e.querySelector('.toggle-descriptions').style.height = `${0}px`;
                 e.classList.remove('active');
             }
         });
@@ -152,9 +178,11 @@
         e.addEventListener('click', () => {
             if (e.classList.contains('active')) {
                 e.classList.remove('active');
+                e.querySelector('.toggle-descriptions').style.height = `${0}px`;
             } else{
                 removeTgl();
-                e.querySelector('.toggle-descriptions')[0].style.
+                const height = e.querySelector('.toggle-descriptions').scrollHeight;
+                e.querySelector('.toggle-descriptions').style.height = `${height}px`;
                 e.classList.add('active');
             }
         })

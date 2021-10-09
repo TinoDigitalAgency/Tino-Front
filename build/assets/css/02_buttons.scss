@@ -127,6 +127,16 @@
   }
 }
 
+.black-clr{
+  .more-link{
+    color: $mainBlack;
+    border-bottom-color: rgba($mainBlack, .25);
+    &::before{
+      background-color: rgba($mainBlack, 1);
+    }
+  }
+}
+
 .clutch-link {
   display: flex;
   align-items: center;
