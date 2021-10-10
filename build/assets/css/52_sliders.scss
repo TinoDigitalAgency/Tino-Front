@@ -75,6 +75,14 @@
       animation: 6s svgRoundAnimation forwards infinite linear;
     }
   }
+  &.stopAnimation {
+    svg {
+      .loader {
+        stroke-dashoffset: 0;
+        animation: none;
+      }
+    }
+  }
 }
 .team-slider-wrapper {
   position: relative;

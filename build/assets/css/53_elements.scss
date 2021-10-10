@@ -74,7 +74,7 @@
     font-size: 60px;
     color: #FFF7E7;
     letter-spacing: 0;
-    line-height: 35px;
+    line-height: 80px;
     margin-bottom: 0;
     & + p {
       margin-top: 30px;
@@ -105,6 +105,9 @@
   &-link {
     display: block;
     position: relative;
+    & > * {
+      pointer-events: none;
+    }
     img {
       width: 100%;
       height: auto;
@@ -175,6 +178,9 @@
     transition: opacity 400ms;
     position: relative;
     cursor: pointer;
+    & > * {
+      pointer-events: none;
+    }
     &::before {
       content: '';
       width: 1px;
@@ -247,14 +253,14 @@
     display: flex;
     align-items: center;
     position: relative;
-    &.active {
-      .star-block-icon {
-        left: calc(100% - 25px);
-      }
-      .star-block-line {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-      }
-    }
+    //&.active {
+    //  .star-block-icon {
+    //    left: calc(100% - 25px);
+    //  }
+    //  .star-block-line {
+    //    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    //  }
+    //}
   }
   &-icon {
     position: absolute;
@@ -292,6 +298,16 @@
       font-size: 40px;
       letter-spacing: 0;
       line-height: 50px;
+    }
+  }
+  &.active {
+    .star-block-animation {
+      .star-block-icon {
+        left: calc(100% - 25px);
+      }
+      .star-block-line {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
     }
   }
 }

@@ -1,31 +1,18 @@
 const elements = document.querySelectorAll('.tilt-card')
 
-// TweenLite.set(elements, {
-//     transformPerspective: 900,
-//     transformOrigin: 'center center -10'
-// });
+const tilt = (event) => {
+    let xPos = (event.clientX / window.innerWidth) - 0.5,
+        yPos = (event.clientY / window.innerHeight) - 0.5,
+        box = event.target;
 
-function onMouseMove (e) {
-    // console.log(e.currentTarget);
-    const elXPos = e.currentTarget.getBoundingClientRect().left
-    const elYPos = e.currentTarget.getBoundingClientRect().top
-    const width = e.currentTarget.getBoundingClientRect().width
-    const height = e.currentTarget.getBoundingClientRect().height
-    const elRelativeXPos = e.pageX - elXPos
-    const elRelativeYPos = e.pageY - elYPos
-    const xPos = ((elRelativeXPos / width) - 0.5)*2
-    const yPos = ((elRelativeYPos / height) - 0.5)*2
-    const rotationXValue = 2 * yPos
-    const rotationYValue = -2 * xPos
-
-
-    TweenLite.to(e.currentTarget, 10, {
-        rotationY: rotationYValue,
-        rotationX: rotationXValue,
-        ease: Expo.easeOut,
-    })
+    TweenLite.to(box, 0.6, {
+        rotationY: 5 * xPos,
+        rotationX: 5 * yPos,
+        ease: Power1.easeOut,
+        transformPerspective: 900,
+        transformOrigin: 'center'
+    });
 }
-
-// elements.forEach(element => {
-//     element.addEventListener('mousemove', onMouseMove)
-// })
+elements.forEach(element => {
+    element.addEventListener('mousemove', tilt, {passive: true})
+})
