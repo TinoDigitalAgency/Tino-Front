@@ -189,7 +189,9 @@
     .loader {
       stroke-dashoffset: 370.5px;
       stroke-dasharray: 370.5px;
-      animation: 6s svgRoundAnimation forwards infinite linear;
+      &.run{
+        animation: 6s svgRoundAnimation forwards linear;
+      }
     }
   }
 }

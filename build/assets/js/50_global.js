@@ -52,6 +52,44 @@ document.addEventListener('DOMContentLoaded', function(){
             nextEl: ".team-next"
         },
     });
+
+
+    const practiceSliderImg = new Swiper(".practice-slider__left", {
+        loop: true,
+        speed: 1000,
+        effect: "fade",
+        pagination: {
+            el: ".practice-nav",
+            clickable: false,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '"></span>';
+            },
+        },
+    });
+    const practiceSlider = new Swiper(".practice-slider__right", {
+        loop: true,
+        speed: 1000,
+        effect: "fade",
+        autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".practice-next"
+        },
+        on: {
+            init: function () {
+                document.querySelector('.practice-next .loader').classList.add('run');
+            },
+        },
+    });
+    practiceSlider.on('slideChangeTransitionEnd', function () {
+        document.querySelector('.practice-next .loader').classList.add('run');
+    });
+    practiceSlider.on('slideChangeTransitionStart', function () {
+        document.querySelector('.practice-next .loader').classList.remove('run');
+    });
+    practiceSlider.controller.control = practiceSliderImg;
 });
 
 const toggleActiveClass = (selector, classToggled, isArray = false) => {
