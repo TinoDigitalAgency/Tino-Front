@@ -55,12 +55,10 @@ document.addEventListener('DOMContentLoaded', function(){
     teamSlider.on('slideNextTransitionStart', function () {
         const nextBtn = document.querySelector('.team-next');
         nextBtn.classList.add('stopAnimation')
-        console.log('slide slideChangeTransitionStart');
     });
     teamSlider.on('slideNextTransitionEnd', function () {
         const nextBtn = document.querySelector('.team-next');
         nextBtn.classList.remove('stopAnimation')
-        console.log('slide slideChangeTransitionStart');
     });
 });
 

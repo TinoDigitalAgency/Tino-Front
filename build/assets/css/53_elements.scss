@@ -81,6 +81,13 @@
     }
   }
 }
+.section {
+  .about-text {
+    p {
+      line-height: 80px;
+    }
+  }
+}
 
 .block-text-icon {
   .block-icon {
@@ -442,4 +449,29 @@
 .tilt-card {
   perspective: 900px;
   transform-origin: center center -10;
+}
+
+.cursor {
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  //top: 50%;
+  //left: 10%;
+  //margin-left: -30px;
+  //margin-top: -30px;
+  -webkit-transform: translate(-50%, -50%) rotate(0deg) scale(0,0);
+  transform: translate(-50%, -50%) rotate(0deg) scale(0,0);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  //transition: all 400ms;
+  &.cursor-close {
+    opacity: 1;
+    background: url(../images/icons/close-video.png) center center no-repeat;
+    background-size: 100% auto;
+    //transform: translate(-50%, -50%) rotate(0deg) scale(1,1);
+  }
 }
