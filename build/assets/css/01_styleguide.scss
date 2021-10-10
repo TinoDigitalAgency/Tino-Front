@@ -53,6 +53,10 @@ h3, .h3 {
 .text-center {
   text-align: center;
 }
+.text-right {
+  text-align: right;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -96,6 +100,7 @@ h3, .h3 {
   padding-left: 135px;
   padding-right: 135px;
 }
+
 .mb-20{
   margin-bottom: 20px;
 }
@@ -107,6 +112,9 @@ h3, .h3 {
 }
 .mt-60{
   margin-top: 60px;
+}
+.mt-50{
+  margin-top: 50px;
 }
 .mb-60{
   margin-bottom: 60px;
@@ -131,6 +139,9 @@ h3, .h3 {
 }
 .mt-90{
   margin-top: 90px;
+}
+.mr-25{
+  margin-right: 25px;
 }
 
 .row-m-20{
@@ -213,4 +224,21 @@ img{
   max-height: 100%;
   object-fit: contain;
   display: block;
+}
+
+.mw-860{
+  max-width: 860px;
+}
+.mw-760{
+  max-width: 760px;
+}
+.mw-660{
+  max-width: 660px;
+}
+
+.txt-icon{
+  margin-left: 8px;
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: middle;
 }

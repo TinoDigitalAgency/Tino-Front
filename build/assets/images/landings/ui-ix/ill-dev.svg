@@ -1,0 +1,37 @@
+<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <filter x="-57%" y="-57%" width="214%" height="214%" filterUnits="objectBoundingBox" id="b">
+            <feGaussianBlur stdDeviation="3" in="SourceAlpha" result="shadowBlurInner1"/>
+            <feOffset dx="1" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/>
+            <feColorMatrix values="0 0 0 0 0.993226425 0 0 0 0 0.246395691 0 0 0 0 0.899181073 0 0 0 1 0" in="shadowInnerInner1" result="shadowMatrixInner1"/>
+            <feGaussianBlur stdDeviation="22.5" in="SourceAlpha" result="shadowBlurInner2"/>
+            <feOffset dx="-12" dy="-12" in="shadowBlurInner2" result="shadowOffsetInner2"/>
+            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"/>
+            <feColorMatrix values="0 0 0 0 0.050601382 0 0 0 0 0.0274733392 0 0 0 0 0.595762391 0 0 0 0.5 0" in="shadowInnerInner2" result="shadowMatrixInner2"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixInner1"/>
+                <feMergeNode in="shadowMatrixInner2"/>
+            </feMerge>
+        </filter>
+        <filter x="-65.8%" y="-79.4%" width="231.6%" height="258.7%" filterUnits="objectBoundingBox" id="c">
+            <feGaussianBlur stdDeviation="10" in="SourceGraphic"/>
+        </filter>
+        <filter x="-56.2%" y="-72%" width="212.5%" height="244%" filterUnits="objectBoundingBox" id="e">
+            <feGaussianBlur stdDeviation="6" in="SourceGraphic"/>
+        </filter>
+        <circle id="a" cx="25" cy="25" r="25"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="d" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#A91889" xlink:href="#a"/>
+        <use fill="#000" filter="url(#b)" xlink:href="#a"/>
+        <ellipse fill="#160FBB" filter="url(#c)" mask="url(#d)" cx="49.6" cy="38.7" rx="22.8" ry="18.9"/>
+        <ellipse fill="#DC1DB4" filter="url(#e)" mask="url(#d)" cx="-12" cy="28.5" rx="16" ry="12.5"/>
+        <path d="M15.1 35c.333-6.333 2-9.5 5-9.5S25.267 29 26.6 36" stroke="#090909" stroke-width="2" stroke-linecap="round" mask="url(#d)"/>
+        <path d="m0 13 44 4.5c-1.333 6.333-5.167 9.5-11.5 9.5C23 27 24 20 21 20s-2.5 5-11.5 4c-6-.667-9.167-3.667-9.5-9" fill="#090909" mask="url(#d)"/>
+        <path d="m34.08 15.366-5.298 5.823M37.964 16.608l-3.04 3.124M12.022 13.177l-4.31 5.338M15.856 14.434l-2.527 3.093" stroke="#FEF7E6" stroke-linecap="round" mask="url(#d)"/>
+    </g>
+</svg>

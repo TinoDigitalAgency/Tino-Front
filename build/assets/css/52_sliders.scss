@@ -83,7 +83,7 @@
   .arrow-button-next {
     position: absolute;
     right: -25px;
-    top: 140px;
+    top: 100px;
     @media (max-width: 990px) {
       display: none;
     }
@@ -180,6 +180,19 @@
         h3{
           padding-right: 150px;
         }
+      }
+    }
+
+    &.text-mod{
+      margin-top: 80px;
+
+      .practice-slider-content__right{
+        padding-top: 130px;
+        opacity: 0.6;
+      }
+
+      .arrow-button-next{
+        top: 10px;
       }
     }
   }
