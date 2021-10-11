@@ -5,13 +5,15 @@
   border: none;
   border-radius: 0;
   font-size: 30px;
-  line-height: 30px;
   font-family: Graphit-Medium;
   color: $whiteColor;
   transition: all 400ms;
   cursor: pointer;
-  &:hover {
-
+  
+  @media (max-width: 767px) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 100%;
   }
 }
 
@@ -26,6 +28,13 @@
   //transition: all 400ms;
   cursor: pointer;
   position: relative;
+  @media (max-width: 767px) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 100%;
+
+  }
+
   &::after,
   &::before {
     content: "";
