@@ -52,7 +52,14 @@ document.addEventListener('DOMContentLoaded', function(){
             nextEl: ".team-next"
         },
     });
-
+    teamSlider.on('slideNextTransitionStart', function () {
+        const nextBtn = document.querySelector('.team-next');
+        nextBtn.classList.add('stopAnimation')
+    });
+    teamSlider.on('slideNextTransitionEnd', function () {
+        const nextBtn = document.querySelector('.team-next');
+        nextBtn.classList.remove('stopAnimation')
+    });
 
     const practiceSliderImg = new Swiper(".practice-slider__left", {
         loop: true,

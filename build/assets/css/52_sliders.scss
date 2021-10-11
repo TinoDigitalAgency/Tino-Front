@@ -75,6 +75,14 @@
       opacity: 1 !important;
     }
   }
+  &.stopAnimation {
+    svg {
+      .loader {
+        stroke-dashoffset: 0;
+        animation: none;
+      }
+    }
+  }
 }
 
 .practice-slider-wrapper{
