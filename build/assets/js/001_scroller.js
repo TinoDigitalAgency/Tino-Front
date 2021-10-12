@@ -59,7 +59,9 @@ const goToSecondScreen = () => {
     requestId = null
 }
 
-document.getElementById('scroll-down').addEventListener('click', goToSecondScreen)
+if (document.getElementById('scroll-down')) {
+    document.getElementById('scroll-down').addEventListener('click', goToSecondScreen)
+}
 
 function onScroll() {
     scroller.scrollRequest++;
