@@ -1,5 +1,3 @@
-import {onResize} from "./001_scroller";
-
 const faqTriggers = document.querySelectorAll('.faq-trigger');
 
 const faqHandler = (e) => {
@@ -10,7 +8,7 @@ const faqHandler = (e) => {
     const faqTimeline = gsap.timeline();
     console.log(e);
     console.log(faqContentInner);
-    onResize();
+    // onResize();
     if (parentWrapper.classList.contains('active')) {
         targetTrigger.classList.remove('active');
         parentWrapper.classList.remove('active');

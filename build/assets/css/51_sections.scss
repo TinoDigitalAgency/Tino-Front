@@ -64,12 +64,6 @@
         -webkit-text-stroke: 2px $whiteColor;
       }
       cursor: pointer;
-      &:hover {
-        span {
-          -webkit-text-stroke: 2px $whiteColor;
-          -webkit-text-fill-color: transparent;
-        }
-      }
     }
     .showreal-block {
       position: absolute;
@@ -117,8 +111,8 @@
   }
   &-share {
     padding: 40px 0;
-    background: url(../images/cover_1920.png) center center no-repeat;
-    background-size: cover;
+    //background: url(../images/cover_1920.png) center center no-repeat;
+    //background-size: cover;
     margin-bottom: 100px;
     .row {
       align-items: center;

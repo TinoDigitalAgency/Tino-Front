@@ -1,5 +1,5 @@
-const menuWrapper = document.getElementsByClassName('side-menu-wrapper')[0];
-const hoverElements    = document.getElementsByClassName('side-menu-item');
+const menuWrapper   = document.getElementsByClassName('side-menu-wrapper')[0];
+const hoverElements = document.querySelectorAll('.side-menu-item');
 const menuImageHandler = (e) => {
     const menuWrapperLeftOffset = menuWrapper.offsetLeft;
     const hoveredItem           = e.target;
@@ -86,9 +86,26 @@ const animateSubmenu = (submenuID) => {
                 return index * 0.1;
             }
         });
-    console.log(menuItems);
 }
 
+const playVideoOnHover = (e) => {
+    const videoElement = e.target.querySelector('video');
+    if(videoElement) {
+        videoElement.play();
+    }
+
+}
+const stopVideoOnHover = (e) => {
+    const videoElement = e.target.querySelector('video');
+    if(videoElement) {
+        videoElement.pause();
+    }
+}
+
+hoverElements.forEach(hoverElement => {
+    hoverElement.addEventListener('mouseenter', playVideoOnHover);
+    hoverElement.addEventListener('mouseleave', stopVideoOnHover);
+})
 document.querySelector('#menu-bg').addEventListener('click', closeSubmenu)
 document.querySelectorAll('.menu-link').forEach(item => {
     item.addEventListener('click', menuToggle)
