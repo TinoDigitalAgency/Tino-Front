@@ -1,0 +1,37 @@
+<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <filter x="-9%" y="-9%" width="118%" height="118%" filterUnits="objectBoundingBox" id="b">
+            <feGaussianBlur stdDeviation="3" in="SourceAlpha" result="shadowBlurInner1"/>
+            <feOffset dx="1" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/>
+            <feColorMatrix values="0 0 0 0 0.993226425 0 0 0 0 0.246395691 0 0 0 0 0.899181073 0 0 0 1 0" in="shadowInnerInner1" result="shadowMatrixInner1"/>
+            <feGaussianBlur stdDeviation="3.5" in="SourceAlpha" result="shadowBlurInner2"/>
+            <feOffset dx="-2" dy="-2" in="shadowBlurInner2" result="shadowOffsetInner2"/>
+            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"/>
+            <feColorMatrix values="0 0 0 0 0.050601382 0 0 0 0 0.0274733392 0 0 0 0 0.595762391 0 0 0 0.5 0" in="shadowInnerInner2" result="shadowMatrixInner2"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixInner1"/>
+                <feMergeNode in="shadowMatrixInner2"/>
+            </feMerge>
+        </filter>
+        <filter x="-65.8%" y="-79.4%" width="231.6%" height="258.7%" filterUnits="objectBoundingBox" id="c">
+            <feGaussianBlur stdDeviation="10" in="SourceGraphic"/>
+        </filter>
+        <filter x="-56.2%" y="-72%" width="212.5%" height="244%" filterUnits="objectBoundingBox" id="e">
+            <feGaussianBlur stdDeviation="6" in="SourceGraphic"/>
+        </filter>
+        <circle id="a" cx="25" cy="25" r="25"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="d" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#C82CA5" xlink:href="#a"/>
+        <use fill="#000" filter="url(#b)" xlink:href="#a"/>
+        <ellipse fill="#160FBB" filter="url(#c)" mask="url(#d)" cx="49.6" cy="38.7" rx="22.8" ry="18.9"/>
+        <ellipse fill="#DC1DB4" filter="url(#e)" mask="url(#d)" cx="-12" cy="28.5" rx="16" ry="12.5"/>
+        <path d="M20.1 24.5c3.396 0 5.71 3.34 7.158 9.748l.166.769c.054.26.107.526.158.796a1 1 0 0 1-1.964.374c-1.252-6.571-3.18-9.687-5.518-9.687-2.133 0-3.509 2.355-3.929 7.468l-.051.714c-.008.122-.015.246-.021.37a1 1 0 1 1-1.998-.105c.027-.503.062-.99.106-1.459l.072-.69c.629-5.417 2.513-8.298 5.821-8.298z" fill="#090909" fill-rule="nonzero" mask="url(#d)"/>
+        <path d="m0 13 44 4.5c-1.333 6.333-5.167 9.5-11.5 9.5C23 27 24 20 21 20s-2.5 5-11.5 4c-6-.667-9.167-3.667-9.5-9" fill="#090909" mask="url(#d)"/>
+        <path d="M34.416 14.996a.5.5 0 0 1 .033.707l-5.297 5.823a.5.5 0 0 1-.74-.673l5.298-5.823a.5.5 0 0 1 .706-.034zM38.312 16.25a.5.5 0 0 1 .01.707l-3.039 3.124a.5.5 0 0 1-.717-.698l3.04-3.123a.5.5 0 0 1 .706-.01zM12.336 12.788a.5.5 0 0 1 .075.703l-4.31 5.338a.5.5 0 0 1-.777-.628l4.31-5.338a.5.5 0 0 1 .702-.075zM16.172 14.047a.5.5 0 0 1 .071.703l-2.527 3.093a.5.5 0 0 1-.774-.632l2.527-3.093a.5.5 0 0 1 .703-.071z" fill="#FEF7E6" fill-rule="nonzero" mask="url(#d)"/>
+    </g>
+</svg>

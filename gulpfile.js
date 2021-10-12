@@ -35,10 +35,7 @@ gulp.task('sass',function () {
         .pipe(concat('main.min.css'))
         .pipe(sass({outputStyle:'compressed'}))
         .pipe(sass({errLogToConsole:true}))
-        .pipe(autoprefixer({
-            browsers:['last 50 versions'],
-            cascade:false
-        }))
+        .pipe(autoprefixer())
         .pipe(cssmin())
         .pipe(gulp.dest('dest/assets/css/'))
         .pipe(browserSync.reload({stream:true}));
@@ -59,7 +56,7 @@ gulp.task('jsmin', function () {
 });
 
 gulp.task('svg|png|jpg', function () {
-   gulp.src('build/assets/images/*')
+   gulp.src('build/assets/images/**/*')
        .pipe(gulp.dest('dest/assets/images/'))
        .pipe(browserSync.reload({stream:true}));
 });
