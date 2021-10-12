@@ -68,7 +68,7 @@ function onScroll() {
     }
 }
 
-function onResize() {
+export const onResize = () => {
     scroller.resizeRequest++;
     if (!requestId) {
         requestId = requestAnimationFrame(updateScroller);
