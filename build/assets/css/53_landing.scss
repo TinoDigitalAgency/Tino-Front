@@ -589,6 +589,9 @@
     @media (max-width: 991px){
       background-size: 40%;
     }
+    @media (max-width: 767px){
+      padding-top: 140px!important;
+    }
 
     &::before {
       content: '';
