@@ -1,13 +1,25 @@
 @import "variables";
 
+.hello-text {
+  p {
+    position: relative;
+    z-index: 1;
+  }
+}
 .hero-line-animation {
-  margin-top: 30px;
-  width: 177px;
+  transform: translateY(-20px);
+  width: 135px;
   position: relative;
+  z-index: 0;
   img {
     display: block;
+    max-width: none;
+    max-height: none;
   }
   .hero-line {
+    img {
+      width: 100%;
+    }
     transition: all 1s;
     clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
   }
@@ -20,7 +32,8 @@
   &.active {
     .hero-hand {
       left: 100%;
-      margin-left: -12px;
+      margin-left: 12px;
+      top: -11px;
     }
     .hero-line {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -80,6 +93,9 @@
     & + p {
       margin-top: 30px;
     }
+  }
+  img {
+    display: inline;
   }
 }
 .section {
@@ -278,6 +294,10 @@
     transition: all 1s;
     img {
       display: block;
+      width: auto;
+      height: auto;
+      max-width: none;
+      max-height: none;
     }
   }
   &-line {
@@ -306,6 +326,9 @@
       font-size: 40px;
       letter-spacing: 0;
       line-height: 50px;
+      @media (max-width: 1200px) {
+        
+      }
     }
   }
   &.active {
@@ -322,6 +345,7 @@
 
 .content-image {
   img {
+    display: inline-flex;
     max-width: 100%;
   }
 }
@@ -531,7 +555,7 @@
     height: 1px;
     position: absolute;
     background-image: linear-gradient(to left, #150fba, #a91889);
-    transition: all 300ms ease;
+    //transition: all 300ms ease;
   }
 
   &-name{
@@ -647,5 +671,22 @@
       border-radius: 100%;
       background-color: white;
     }
+  }
+}
+.parallax-wrapper {
+  position: relative;
+  overflow: hidden;
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+  .parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    height: 200%;
+    width: 100%;
   }
 }

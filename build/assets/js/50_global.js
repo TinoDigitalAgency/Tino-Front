@@ -97,8 +97,36 @@ document.addEventListener('DOMContentLoaded', function(){
         document.querySelector('.practice-next .loader').classList.remove('run');
     });
     practiceSlider.controller.control = practiceSliderImg;
-});
 
+
+});
+const parallaxSections = document.querySelectorAll('.parallax-wrapper');
+let lastScrollPosition = 0;
+const parallaxHandler = (e) => {
+    const htmlScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    console.log(htmlScrollTop);
+    parallaxSections.forEach(parallaxSection => {
+        const offsetTop = parallaxSection.offsetTop;
+        const windowHeight = window.innerHeight;
+        const scrollTop = htmlScrollTop + windowHeight;
+        const parallaxBg = parallaxSection.querySelector('.parallax-bg');
+        const scrollProgrees = scrollTop - offsetTop;
+        let percentProgress = scrollProgrees / windowHeight * 100;
+        if(percentProgress < 0) {
+            percentProgress = 0;
+        } else if(percentProgress > 100) {
+            percentProgress = 100;
+        }
+        if(scrollTop > offsetTop) {
+            gsap.to(parallaxBg, .3, {y: '-'+percentProgress/2+'%'});
+        }
+        lastScrollPosition = htmlScrollTop <= 0 ? 0 : htmlScrollTop;
+    })
+
+}
+if(parallaxSections) {
+    document.addEventListener('scroll', parallaxHandler, {passive: true});
+}
 const toggleActiveClass = (selector, classToggled, isArray = false) => {
     if (document.querySelector(selector)) {
         if (!isArray) {

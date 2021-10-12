@@ -1,5 +1,6 @@
-var html = document.documentElement;
-var body = document.body;
+let html = document.documentElement;
+let body = document.body;
+const scrollUpdaters = document.querySelectorAll('.scroll-update');
 
 var scroller = {
     target: document.querySelector("#scroll-container"),
@@ -13,11 +14,21 @@ var scroller = {
 var requestId = null;
 
 TweenLite.set(scroller.target, {
-    rotation: 0.1,
+    rotation: 0,
     force3D: true
 }, () => {console.log(scroller.y)});
 
 window.addEventListener("load", onLoad);
+scrollUpdaters.forEach(scrollUpdater => {
+    scrollUpdater.addEventListener("click", () => {
+        console.log('click');
+        setTimeout(function () {
+            body.style.height = scroller.target.clientHeight + "px"
+        }, 500)
+    })
+})
+
+
 
 function onLoad() {
     updateScroller();

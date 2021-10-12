@@ -8,7 +8,7 @@ const faqHandler = (e) => {
     const faqTimeline = gsap.timeline();
     console.log(e);
     console.log(faqContentInner);
-
+    // onResize();
     if (parentWrapper.classList.contains('active')) {
         targetTrigger.classList.remove('active');
         parentWrapper.classList.remove('active');
