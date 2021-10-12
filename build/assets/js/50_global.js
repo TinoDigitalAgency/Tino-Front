@@ -65,6 +65,7 @@ document.addEventListener('DOMContentLoaded', function(){
         loop: true,
         speed: 1000,
         effect: "fade",
+        autoHeight: true,
         pagination: {
             el: ".practice-nav",
             clickable: false,
@@ -77,6 +78,7 @@ document.addEventListener('DOMContentLoaded', function(){
         loop: true,
         speed: 1000,
         effect: "fade",
+        autoHeight: true,
         autoplay: {
             delay: 6000,
             disableOnInteraction: false,
@@ -97,8 +99,10 @@ document.addEventListener('DOMContentLoaded', function(){
         document.querySelector('.practice-next .loader').classList.remove('run');
     });
     practiceSlider.controller.control = practiceSliderImg;
+    practiceSliderImg.controller.control = practiceSlider;
 
 
+    responsiveSwiper();
 });
 const parallaxSections = document.querySelectorAll('.parallax-wrapper');
 let lastScrollPosition = 0;
@@ -161,3 +165,31 @@ document.querySelectorAll('.toggle').forEach((e) => {
         }
     })
 });
+
+const responsiveSwiper = function () {
+    let swiper = Swiper;
+
+    function swiperMode() {
+        if (window.innerWidth <= 767) {
+            swiper = new Swiper('.mobile-slider', {
+                freeMode: true,
+                autoHeight: true,
+                slidesPerView: "auto",
+                scrollbar: {
+                    el: ".swiper-scrollbar",
+                    hide: true,
+                },
+            });
+        } else {
+            // swiper.destroy();
+        }
+    }
+
+    window.addEventListener('resize', function() {
+        swiperMode();
+    });
+
+    window.addEventListener('load', function() {
+        swiperMode();
+    });
+}
