@@ -1,25 +1,29 @@
 @import './variables.scss';
 
 .viewport {
-  overflow: hidden;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  @media (min-width: 1024px) {
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 .scroll-container {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  overflow: hidden;
-  z-index: 10;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
+  @media (min-width: 1024px) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 10;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+  }
 }
 .app-wrapper {
   width: 100%;
@@ -32,12 +36,27 @@
   }
   &-inner {
     padding: 100px 0;
+    @media (max-width: 767px) {
+      padding: 40px 0;
+    }
   }
   &-hero {
     position: relative;
     .section-inner {
       min-height: 100vh;
       padding: 200px 0;
+      @media (max-width: 767px) {
+        padding-top: 140px;
+      }
+    }
+    .hero-abs {
+      @media (max-width: 767px) {
+        position: absolute;
+        top: 320px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+      }
     }
     .hero-video {
       position: absolute;
@@ -46,6 +65,12 @@
       transform: translate(-50%, -50%);
       width: 100%;
       max-width: 600px;
+      @media (max-width: 767px) {
+        position: static;
+        transform: translate(0,0);
+        //top: 300px;
+        //transform: translate(-50%, 0);
+      }
       video {
         width: 100%;
         height: auto;
@@ -59,6 +84,10 @@
     .stroke-text {
       font-size: 76px;
       font-family: Graphit-Medium;
+      @media (max-width: 767px) {
+        font-size: 60px;
+        line-height: 60px;
+      }
       span {
         transition: all 400ms;
         -webkit-text-stroke: 2px $whiteColor;
@@ -93,12 +122,18 @@
   &-about {
     .section-inner {
       padding: 100px 0;
+      @media (max-width: 767px) {
+        padding-bottom: 40px;
+      }
     }
     .partner-slider {
       margin-top: 60px;
     }
     .button-group {
       margin-top: 60px;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
     }
   }
   &-services {
@@ -107,6 +142,11 @@
     }
     .col-6 {
       margin-bottom: 100px;
+      @media (max-width: 767px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+      }
     }
   }
   &-share {
@@ -114,21 +154,51 @@
     //background: url(../images/cover_1920.png) center center no-repeat;
     //background-size: cover;
     margin-bottom: 100px;
+    @media (max-width: 767px) {
+      margin-bottom: 40px;
+    }
+    &.parallax-wrapper {
+      .parallax-bg {
+        @media (max-width: 767px) {
+          background-image:  url(../images/cta/moobile-cover.png) !important;
+        }
+      }
+    }
     .row {
       align-items: center;
       .col-text {
         flex:  0 0 calc(100% - 450px);
         max-width: calc(100% - 450px);
+        @media (max-width: 990px) {
+          flex:  0 0 100%;
+          max-width: 100%;
+          //text-align: center;
+        }
+        @media (max-width: 767px) {
+          p {
+            font-size: 18px;
+            line-height: 25px;
+          }
+        }
       }
       .col-btn {
         flex: 0 0 450px;
         max-width: 450px;
+        @media (max-width: 990px) {
+          flex:  0 0 100%;
+          max-width: 100%;
+          text-align: center;
+          margin-top: 30px;
+        }
       }
     }
   }
   &-projects {
     .btn-group {
       padding-top: 55px;
+      @media (max-width: 767px) {
+        padding-top: 20px;
+      }
     }
   }
   &-faq {
@@ -141,6 +211,9 @@
     }
   }
   &-awards {
+    @media (max-width: 767px) {
+      display: none;
+    }
     .h1 {
       font-size: 120px;
       line-height: 130px;

@@ -4,9 +4,16 @@
   top: 0;
   width: 100%;
   z-index: 9;
+  @media (max-width: 767px) {
+    position: absolute;
+  }
   &.sticky {
     .header-inner {
       padding: 30px 50px;
+      @media (max-width: 990px) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
     }
   }
   &-inner {
@@ -14,9 +21,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 990px) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    @media (max-width: 767px) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
   }
   .logo {
     height: 60px;
+    @media (max-width: 767px) {
+      height: 50px;
+      img {
+        max-height: 50px;
+      }
+    }
     a {
       display: block;
     }
@@ -37,11 +58,18 @@
   border: none;
   position: relative;
   cursor: pointer;
+  @media (max-width: 767px) {
+    width: 50px;
+    height: 50px;
+  }
   span {
     width: 25px;
     height: 2px;
     background-color: #fff7e7;
     position: absolute;
+    @media (max-width: 767px) {
+      width: 16px;
+    }
     &:first-child {
       left: calc(50% - 5px);
       top: calc(50% - 4px);
@@ -57,6 +85,9 @@
 .menu {
   display: flex;
   align-items: center;
+  @media (max-width: 767px) {
+    display: none;
+  }
   &-item {
     padding: 0 10px;
 

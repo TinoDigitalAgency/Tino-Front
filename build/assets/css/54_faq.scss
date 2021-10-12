@@ -29,6 +29,10 @@
     color: $whiteColor;
     position: relative;
     text-align: left;
+    @media (max-width: 767px) {
+      font-size: 18px;
+      line-height: 25px;
+    }
     & > * {
       pointer-events: none;
     }
@@ -75,12 +79,19 @@
     overflow: hidden;
     &-inner {
       padding: 10px 0 40px 0;
+      @media (max-width: 767px) {
+        padding: 0 0 20px 0;
+      }
     }
     p {
       margin-bottom: 0;
       font-size: 25px;
       color: rgba($whiteColor, .6);
       line-height: 35px;
+      @media (max-width: 767px) {
+        font-size: 18px;
+        line-height: 25px;
+      }
       & + p {
         margin-top: 20px;
       }

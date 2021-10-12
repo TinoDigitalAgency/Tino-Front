@@ -6,8 +6,8 @@ const tilt = (event) => {
         box = event.target;
 
     TweenLite.to(box, 0.6, {
-        rotationY: 5 * xPos,
-        rotationX: 5 * yPos,
+        rotationY: 10 * xPos,
+        rotationX: 10 * yPos,
         ease: Power1.easeOut,
         transformPerspective: 900,
         transformOrigin: 'center'

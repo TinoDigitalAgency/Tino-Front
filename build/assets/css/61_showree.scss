@@ -17,5 +17,8 @@
     height: 100%;
     object-fit: cover;
     cursor: pointer;
+    @media (max-width: 1024px) {
+      object-fit: contain;
+    }
   }
 }

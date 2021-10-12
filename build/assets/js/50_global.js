@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const clientSlider = new Swiper('.partner-slider', {
         slidesPerView: 'auto',
-        spaceBetween: 80,
+        spaceBetween: 5,
         freeMode: true,
         loop: true,
         speed: 7000,
@@ -37,6 +37,11 @@ document.addEventListener('DOMContentLoaded', function(){
         autoplay: {
             delay: 0,
             disableOnInteraction: false,
+        },
+        breakpoints: {
+            768: {
+                spaceBetween: 80,
+            }
         }
     });
 

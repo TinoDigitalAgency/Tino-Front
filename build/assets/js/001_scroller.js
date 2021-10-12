@@ -19,6 +19,8 @@ TweenLite.set(scroller.target, {
 }, () => {console.log(scroller.y)});
 
 window.addEventListener("load", onLoad);
+window.addEventListener('resize', destroyScroller)
+
 scrollUpdaters.forEach(scrollUpdater => {
     scrollUpdater.addEventListener("click", () => {
         console.log('click');
@@ -31,10 +33,20 @@ scrollUpdaters.forEach(scrollUpdater => {
 
 
 function onLoad() {
-    updateScroller();
-    window.focus();
-    window.addEventListener("resize", onResize);
-    document.addEventListener("scroll", onScroll, {passive: true});
+    if(window.innerWidth > 1024) {
+        updateScroller();
+        window.focus();
+        window.addEventListener("resize", onResize);
+        document.addEventListener("scroll", onScroll, {passive: true});
+    }
+}
+
+function destroyScroller() {
+    console.log('resize');
+    console.log(window);
+    if(window.outerWidth < 1025) {
+        body.style.height = 'auto';
+    }
 }
 
 function updateScroller() {
@@ -61,13 +73,20 @@ function updateScroller() {
 }
 
 const goToSecondScreen = () => {
-    scroller.scrollRequest = 1;
-    scroller.y = window.innerHeight;
-    html.scrollTop = window.innerHeight;
-    TweenLite.to(scroller.target, {
-        y: -scroller.y
-    });
-    requestId = null
+    if(window.outerWidth < 1025) {
+        window.scrollBy({
+            top: window.outerHeight,
+            behavior: 'smooth'
+        });
+    } else {
+        scroller.scrollRequest = 1;
+        scroller.y = window.innerHeight;
+        html.scrollTop = window.innerHeight;
+        TweenLite.to(scroller.target, {
+            y: -scroller.y
+        });
+        requestId = null
+    }
 }
 
 if (document.getElementById('scroll-down')) {

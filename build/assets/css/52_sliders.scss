@@ -5,6 +5,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%) rotate(-5deg);
+  @media (max-width: 767px) {
+    //top: 460px;
+    //transform: translate(-50%,0) rotate(-5deg);
+  }
   .swiper-slide {
     width: auto;
   }
@@ -40,11 +44,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 767px) {
+      width: 140px;
+      height: 80px;
+      padding: 0 15px;
+    }
   }
   img {
     width: auto;
     &.chopa {
-      height: 71px;
+      height: 40px;
     }
     &.mindnow {
       height: 20px;
@@ -85,6 +94,9 @@
       animation: 6s svgRoundAnimation forwards infinite linear;
     }
   }
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 .team-slider-wrapper {
   position: relative;
@@ -103,6 +115,9 @@
     border-radius: 50%;
     width: 350px;
     height: 350px;
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
   .swiper-slide {
     opacity: 0 !important;
