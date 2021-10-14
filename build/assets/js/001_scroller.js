@@ -13,27 +13,30 @@ var scroller = {
 
 var requestId = null;
 
-TweenLite.set(scroller.target, {
-    rotation: 0,
-    force3D: true
-}, () => {console.log(scroller.y)});
+if(scroller.target) {
+    TweenLite.set(scroller.target, {
+        rotation: 0,
+        force3D: true
+    });
+}
 
 window.addEventListener("load", onLoad);
 window.addEventListener('resize', destroyScroller)
 
 scrollUpdaters.forEach(scrollUpdater => {
-    scrollUpdater.addEventListener("click", () => {
-        console.log('click');
-        setTimeout(function () {
-            body.style.height = scroller.target.clientHeight + "px"
-        }, 500)
-    })
+    if(scroller.target) {
+        scrollUpdater.addEventListener("click", () => {
+            setTimeout(function () {
+                body.style.height = scroller.target.clientHeight + "px"
+            }, 500)
+        })
+    }
 })
 
 
 
 function onLoad() {
-    if(window.innerWidth > 1024) {
+    if(window.innerWidth > 1024 && scroller.target) {
         updateScroller();
         window.focus();
         window.addEventListener("resize", onResize);
@@ -42,8 +45,6 @@ function onLoad() {
 }
 
 function destroyScroller() {
-    console.log('resize');
-    console.log(window);
     if(window.outerWidth < 1025) {
         body.style.height = 'auto';
     }
@@ -73,19 +74,26 @@ function updateScroller() {
 }
 
 const goToSecondScreen = () => {
-    if(window.outerWidth < 1025) {
+    if(scroller.target) {
+        if(window.outerWidth < 1025) {
+            window.scrollBy({
+                top: window.outerHeight,
+                behavior: 'smooth'
+            });
+        } else {
+            scroller.scrollRequest = 1;
+            scroller.y = window.innerHeight;
+            html.scrollTop = window.innerHeight;
+            TweenLite.to(scroller.target, {
+                y: -scroller.y
+            });
+            requestId = null
+        }
+    } else {
         window.scrollBy({
             top: window.outerHeight,
             behavior: 'smooth'
         });
-    } else {
-        scroller.scrollRequest = 1;
-        scroller.y = window.innerHeight;
-        html.scrollTop = window.innerHeight;
-        TweenLite.to(scroller.target, {
-            y: -scroller.y
-        });
-        requestId = null
     }
 }
 

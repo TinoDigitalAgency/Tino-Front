@@ -113,7 +113,6 @@ const parallaxSections = document.querySelectorAll('.parallax-wrapper');
 let lastScrollPosition = 0;
 const parallaxHandler = (e) => {
     const htmlScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    console.log(htmlScrollTop);
     parallaxSections.forEach(parallaxSection => {
         const offsetTop = parallaxSection.offsetTop;
         const windowHeight = window.innerHeight;
@@ -170,10 +169,14 @@ document.querySelectorAll('.toggle').forEach((e) => {
         }
     })
 });
+document.querySelectorAll('.activeDefault').forEach((element) => {
+    const height = element.querySelector('.toggle-descriptions').scrollHeight;
+    element.querySelector('.toggle-descriptions').style.height = `${height}px`;
+    element.classList.add('active');
+})
 
 const responsiveSwiper = function () {
     let swiper = Swiper;
-
     function swiperMode() {
         if (window.innerWidth <= 767) {
             swiper = new Swiper('.mobile-slider', {

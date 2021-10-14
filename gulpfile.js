@@ -32,7 +32,7 @@ gulp.task('sass',function () {
         .pipe(order([
             '**/*'
         ]))
-        .pipe(concat('main.min.css'))
+        .pipe(concat('main-style.min.css'))
         .pipe(sass({outputStyle:'compressed'}))
         .pipe(sass({errLogToConsole:true}))
         .pipe(autoprefixer())
@@ -46,7 +46,7 @@ gulp.task('jsmin', function () {
         .pipe(order([
             '**/*'
         ]))
-        .pipe(concat('main.min.js'))
+        .pipe(concat('main-script.min.js'))
         // .pipe(babel({
         //     presets: ['@babel/env']
         // }))

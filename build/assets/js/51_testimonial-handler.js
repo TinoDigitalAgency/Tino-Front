@@ -15,7 +15,6 @@ const changeTestimonial = (e) => {
     })
 
     if(!targetElement.classList.contains('active')) {
-        console.log(e);
         testimonialTabs.forEach(testimonialTab => {
             testimonialTab.classList.remove('active');
         });
@@ -28,9 +27,6 @@ const changeTestimonial = (e) => {
         tabTimeline.to(currentTabContent, 0, {display: 'none'});
         tabTimeline.to(tabContent, 0, {display: 'block'});
         tabTimeline.fromTo(tabContent, 1, {opacity: 0, y: translateVal}, {opacity: 1, y: '0'});
-
-
-        console.log(tabID);
     }
 }
 
