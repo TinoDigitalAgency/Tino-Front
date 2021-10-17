@@ -1,4 +1,6 @@
 console.log(window.performance);
+const menuTrigger = document.querySelector('.menu-btn');
+const menuTriggerClose = document.querySelector('.close-menu');
 document.addEventListener('DOMContentLoaded', function(){
     toggleActiveClass('.hero-line-animation', 'active');
     toggleActiveClass('.fadeAnim', 'animated', true);
@@ -106,11 +108,29 @@ document.addEventListener('DOMContentLoaded', function(){
     practiceSlider.controller.control = practiceSliderImg;
     practiceSliderImg.controller.control = practiceSlider;
 
-
     responsiveSwiper();
+
+    menuTrigger.addEventListener('click', primaryMenuTrigger);
+    menuTriggerClose.addEventListener('click', primaryMenuTriggerClose);
+
 });
 const parallaxSections = document.querySelectorAll('.parallax-wrapper');
 let lastScrollPosition = 0;
+const  primaryMenuTrigger = () => {
+    const primaryMenu = document.getElementById('main-menu');
+    const menuTimeLine = gsap.timeline();
+    menuTimeLine.to(primaryMenu, 0, {display: 'block'})
+    menuTimeLine.to(primaryMenu, 1, {opacity: 1});
+    primaryMenu.classList.add('menu-open');
+}
+const  primaryMenuTriggerClose = () => {
+    const primaryMenu = document.getElementById('main-menu');
+    const menuTimeLine = gsap.timeline();
+    menuTimeLine.to(primaryMenu, .4, {opacity: 0})
+    menuTimeLine.to(primaryMenu, 0, {display: 'none'});
+    // primaryMenu.style.display = 'block';
+    // primaryMenu.classList.add('menu-open');
+}
 const parallaxHandler = (e) => {
     const htmlScrollTop = window.pageYOffset || document.documentElement.scrollTop;
     parallaxSections.forEach(parallaxSection => {
@@ -201,3 +221,5 @@ const responsiveSwiper = function () {
         swiperMode();
     });
 }
+
+
