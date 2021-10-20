@@ -516,12 +516,13 @@
         color: rgba($whiteColor, 0.2);
       }
 
-      span{
+      span:not(.img-wrapper){
         transform: translateX(0px);
         transition: all 300ms ease-out;
         display: inline-block;
         position: relative;
-        z-index: 3;
+        z-index: 2;
+        pointer-events: none;
         opacity: 0.5;
         mix-blend-mode: difference;
         @media (max-width: 767px) {
@@ -529,12 +530,10 @@
         }
       }
 
-      img{
-        opacity: 0;
+      .img-wrapper{
         position: absolute;
-        right: 100px;
         top: 50%;
-        transform: translate(100%, -50%) scale(0.6) rotate(65deg);
+        transform: translate(-50%, -50%);
         width: 300px;
         height: 300px;
         object-fit: contain;
@@ -542,14 +541,18 @@
         overflow: hidden;
         display: block;
         max-height: none;
-        z-index: 2;
-        transition: all 300ms ease-in-out;
+        pointer-events: none;
 
         @media (max-width: 1230px) {
           width: 200px;
           height: 200px;
-          transform: translate(60%, -50%) scale(0.6) rotate(65deg);
         }
+      }
+
+      img{
+        opacity: 0;
+        transform: scale(0);
+        transition: 300ms ease;
       }
 
       &::after{
@@ -566,12 +569,12 @@
 
       @media (min-width: 991px) {
         &:hover{
-          span{
+          span:not(.img-wrapper){
             opacity: 1;
           }
           img{
             opacity: 1;
-            transform: translate(0px, -50%) scale(1) rotate(0deg);
+            transform: scale(1);
           }
           &::after{
             opacity: 1;
@@ -595,7 +598,7 @@
           font-size: 20px;
         }
       }
-      img{
+      .img-wrapper{
         width: 240px;
         height: 240px;
       }
