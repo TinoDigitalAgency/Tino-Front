@@ -246,6 +246,9 @@ img{
 .mw-660{
   max-width: 660px;
 }
+.mw-460{
+  max-width: 460px;
+}
 
 .txt-icon{
   margin-left: 8px;
@@ -261,4 +264,8 @@ img{
   @media (max-width: 767px) {
     width: 30px;
   }
+}
+
+.opct-06{
+  opacity: 0.6;
 }

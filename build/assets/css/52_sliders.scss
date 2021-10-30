@@ -145,7 +145,13 @@
     @media (max-width: 990px) {
       display: none;
     }
+
+    &.custom-web-mod{
+      right: 0;
+      top: 0;
+    }
   }
+
   .round-bg {
     position: absolute;
     left: 50%;
@@ -302,6 +308,15 @@
       + span{
         margin-left: 10px!important;;
       }
+    }
+  }
+
+  &.custom-web-slider-wrapper{
+    h3{
+      margin-top: -45px;
+    }
+    .practice-slider-content__left{
+      padding-right: 60px;
     }
   }
 }
