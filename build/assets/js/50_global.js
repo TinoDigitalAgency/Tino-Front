@@ -222,4 +222,15 @@ const responsiveSwiper = function () {
     });
 }
 
-
+const imageObserver = (e) => {
+    const hoveredItem           = e.target;
+    const hoveredItemImage      = hoveredItem.childNodes[3];
+    if(hoveredItem.classList.contains('img-animation')) {
+        const offset = hoveredItem.offsetLeft;
+        const hoveredItemImageOffsetLeft = e.clientX - offset;
+        if(hoveredItemImageOffsetLeft > 0) {
+            hoveredItemImage.style.left = hoveredItemImageOffsetLeft + 'px'
+        }
+    }
+}
+document.querySelector('.img-animation-wrapper').addEventListener('mousemove', imageObserver)
