@@ -105,6 +105,14 @@
     position: absolute;
     right: 0;
     top: 0;
+    &.stopAnimation {
+      svg {
+        .loader {
+          stroke-dashoffset: 370.5px;
+          animation: none;
+        }
+      }
+    }
   }
   .round-bg {
     position: absolute;
@@ -125,14 +133,7 @@
       opacity: 1 !important;
     }
   }
-  &.stopAnimation {
-    svg {
-      .loader {
-        stroke-dashoffset: 0;
-        animation: none;
-      }
-    }
-  }
+
 }
 
 .practice-slider-wrapper{

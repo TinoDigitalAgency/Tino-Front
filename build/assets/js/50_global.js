@@ -233,4 +233,7 @@ const imageObserver = (e) => {
         }
     }
 }
-document.querySelector('.img-animation-wrapper').addEventListener('mousemove', imageObserver)
+if(document.querySelector('.img-animation-wrapper')) {
+    document.querySelector('.img-animation-wrapper').addEventListener('mousemove', imageObserver)
+}
+
