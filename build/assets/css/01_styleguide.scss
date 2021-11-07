@@ -154,6 +154,13 @@ h3, .h3 {
 .ml-20{
   margin-left: 20px;
 }
+.mt-20{
+  margin-top: 20px;
+}
+.mob-pb-0{
+  padding-bottom: 0!important;
+}
+
 
 .row-m-20{
   margin-left: -20px;
@@ -246,9 +253,13 @@ img{
 .mw-660{
   max-width: 660px;
 }
-.mw-460{
-  max-width: 460px;
+.mw-560{
+  max-width: 560px;
 }
+.mw-460{
+   max-width: 460px;
+ }
+
 
 .txt-icon{
   margin-left: 8px;
@@ -268,4 +279,9 @@ img{
 
 .opct-06{
   opacity: 0.6;
+  &-mob{
+    @media (max-width: 767px) {
+      opacity: 0.6;
+    }
+  }
 }

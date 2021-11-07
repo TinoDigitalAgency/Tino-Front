@@ -315,8 +315,10 @@
     h3{
       margin-top: -45px;
     }
-    .practice-slider-content__left{
-      padding-right: 60px;
+    @media (min-width: 768px) {
+      .practice-slider-content__left{
+        padding-right: 60px;
+      }
     }
   }
 }
