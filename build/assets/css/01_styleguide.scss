@@ -267,6 +267,13 @@ img{
   display: inline-block;
   vertical-align: middle;
 
+  &.txt-h1{
+    width: 45px;
+    @media (max-width: 767px) {
+      width: auto;
+    }
+  }
+
   &.mobile-mod{
     margin-left: -5px;
     vertical-align: text-bottom;
