@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function(){
         speed: 1000,
         effect: "fade",
         autoplay: {
-            delay: 6000,
+            delay: 10000,
             disableOnInteraction: false,
         },
         navigation: {
@@ -233,4 +233,7 @@ const imageObserver = (e) => {
         }
     }
 }
-document.querySelector('.img-animation-wrapper').addEventListener('mousemove', imageObserver)
+if(document.querySelector('.img-animation-wrapper')) {
+    document.querySelector('.img-animation-wrapper').addEventListener('mousemove', imageObserver)
+}
+
