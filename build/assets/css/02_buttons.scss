@@ -1,6 +1,7 @@
 @import './variables';
 .btn-primary {
   background: url(../images/cta/btn.jpg) $blueColor center center no-repeat;
+  background-size: 102% 100%;
   padding: 35px 75px;
   border: none;
   border-radius: 0;
@@ -9,7 +10,8 @@
   color: $whiteColor;
   transition: all 400ms;
   cursor: pointer;
-
+  display: inline-flex;
+  justify-content: center;
   @media (max-width: 767px) {
     font-size: 20px;
     line-height: 30px;
@@ -26,6 +28,7 @@
   line-height: 35px;
   font-family: Graphit-Medium;
   color: $whiteColor;
+  display: inline-flex;
   //transition: all 400ms;
   cursor: pointer;
   position: relative;
@@ -58,6 +61,7 @@
     display: block;
     padding: 32px 60px;
     border: 1px rgba($whiteColor, .25) solid;
+    width: 100%;
     @media (max-width: 767px) {
       padding: 20px;
     }

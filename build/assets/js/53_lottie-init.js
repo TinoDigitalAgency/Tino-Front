@@ -25,7 +25,7 @@ const initLottie = () => {
             renderer: 'svg',
             loop: true,
             autoplay: true,
-            path: '/Tino-Front/dest/assets/animation/smiley-glasses-animation/data.json'
+            path: '/assets/animation/smiley-glasses-animation/data.json'
         });
     }
     if(smileyAnimationElement) {

@@ -1,4 +1,6 @@
 //= ../components/header/header.html
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 <main class="app-wrapper">
     <div class="landing-page web-development-page">
         <div class="landing-section section-dark p-tb-150 landing-section-hero">
@@ -8,12 +10,13 @@
                 </div>
                 <h1 class="scrollAlfaActivated">Custom Web Development Company <img class="txt-icon txt-h1" src="assets/images/landings/dev/like.svg" alt=""></h1>
             </div>
-            <div class="scrollAlfaActivated">
-                <img class="full-screen-img img-hero" src="assets/images/landings/web-dev/main_img.png" alt="">
+            <div class="scrollAlfaActivated parallax-gsap" style="margin-top: 100px; min-height: 600px;">
+                <div class="parallax-gsap-bg" style="background-image: url('./assets/images/landings/web-dev/main_img.jpg');"></div>
+<!--                <img class="full-screen-img img-hero" src="assets/images/landings/web-dev/main_img.png" alt="">-->
             </div>
             <div class="container">
                 <p class="mt-80 scrollAlfaActivated mw-760 mob-mt-40 mob-mb-40">We create user-friendly websites and applications. By choosing professional web development services, you're getting captivating and effective web solutions.</p>
-                <button class="mt-80 mob-mt-0 btn-primary scrollAlfaActivated">Book a Consultation Session</button>
+                <button class="mt-80 mob-mt-0 btn-primary scrollAlfaActivated" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anastasia-go'});return false;">Book a Consultation Session</button>
 
                 <div class="row mt-90 mob-mt-0">
                     <div class="col col-6"></div>
@@ -181,27 +184,27 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="practice-slider-content__left">
-                                            <img src="assets/images/landings/web-dev/img_types_eCommerce.jpg" alt="">
+                                            <img src="./assets/images/landings/web-dev/industry-slider/img_types_eCommerce.jpg" alt="">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="practice-slider-content__left">
-                                            <img src="assets/images/landings/web-dev/img_types_fintech.jpg" alt="">
+                                            <img src="./assets/images/landings/web-dev/industry-slider/img_types_fintech.jpg" alt="">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="practice-slider-content__left">
-                                            <img src="assets/images/landings/web-dev/img_types_health.jpg" alt="">
+                                            <img src="./assets/images/landings/web-dev/industry-slider/img_types_health.jpg" alt="">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="practice-slider-content__left">
-                                            <img src="assets/images/landings/web-dev/img_types_Custom.jpg" alt="">
+                                            <img src="./assets/images/landings/web-dev/industry-slider/img_types_Custom.jpg" alt="">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="practice-slider-content__left">
-                                            <img src="assets/images/landings/web-dev/img_types_gastro.jpg" alt="">
+                                            <img src="./assets/images/landings/web-dev/industry-slider/img_types_gastro.jpg" alt="">
                                         </div>
                                     </div>
 
@@ -383,15 +386,15 @@
                             5.0
                             <img src="assets/images/landings/ui-ix/star-line.svg" class="ml-20" alt="">
                         </div>
-                        <p class="scrollAlfaActivated">“ Upon launching, the client is confident to say that their product has the best UI/UX design among its competitors. The client gives credit to Tino Digital Agency’s satisfactory skills in design and development and their openness to applying changes depending on the feedback that they are provided with. “</p>
+                        <p class="scrollAlfaActivated">“ Collaboration with Tino Digital Agency brought us a product that satisfied both us and our end-users. They responded and adjusted to new requirements very quickly. What set them apart was that the UX team really wanted to understand our business. In the end, the design turned out purposeful and quite beautiful. Plus, we enjoyed their style of communication and friendliness. “</p>
                         <div class="author scrollAlfaActivated">
                             <div class="layout-row align-center mt-40">
                                 <div class="ava layout-center">
                                     <img src="./assets/images/testimonials/woman1.svg" alt="">
                                 </div>
                                 <div class="name">
-                                    <p>Kumsal Pınargözü</p>
-                                    <div>Product manager at Codeway</div>
+                                    <p>Michelle</p>
+                                    <div>CEO and Founder of RubyScout</div>
                                 </div>
                             </div>
                         </div>
@@ -399,14 +402,16 @@
                     <div class="col-6 related-section__right">
                         <h2 class="scrollAlfaActivated">Related Case Study</h2>
                         <div class="scrollAlfaActivated">
-                            <div class="related-section__right-card tilt-card">
-                                <img class="full-screen-img" src="./assets/images/projects/covers/scaner.png" alt="">
-                                <div>
-                                    <div class="type">Mobile tool</div>
-                                    <div class="name">Scanner +</div>
+                            <a href="https://tino.design/project/rubyscout" class="project-link">
+                                <div class="related-section__right-card tilt-card">
+                                    <img class="full-screen-img" src="./assets/images/projects/covers/rubuscout.jpg" alt="">
+                                    <div>
+                                        <div class="type">Social Media</div>
+                                        <div class="name">Rubyscout</div>
+                                    </div>
+                                    <div class="dev_type">Website</div>
                                 </div>
-                                <div class="dev_type">Application</div>
-                            </div>
+                            </a>
                         </div>
                         <div class="layout-row scrollAlfaActivated">
                             <div class="flex"></div>
@@ -653,9 +658,9 @@
                         <h3>Do you need a unique website or web application? </h3>
                     </div>
                     <div class="col col-btn">
-                        <button class="btn-bordered mw-400">
+                        <a href="https://tino.design/contact" class="btn-bordered mw-400">
                             <span>Schedule a consultation</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -701,7 +706,9 @@
                     <div class="col col-6 col-cta-btn">
                         <h2 class="h1">Do you have any questions?</h2>
                         <p>Please tell us about your story</p>
-                        <button class="btn-primary">Book 30 min call</button>
+                        <!-- Calendly link widget begin -->
+                        <button class="btn-primary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anastasia-go'});return false;">Book 30 min call</button>
+                        <!-- Calendly link widget end -->
                     </div>
                 </div>
             </div>

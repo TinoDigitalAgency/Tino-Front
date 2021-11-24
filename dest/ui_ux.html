@@ -43,19 +43,19 @@
     <div class="side-menu">
         <div class="side-menu-content">
             <div class="side-menu-list" id="service-submenu">
-                <a href="#" class="side-menu-item side-menu-item-1">
+                <a href="./web-development.html" class="side-menu-item side-menu-item-1">
                     <span class="side-menu-link">Web Development</span>
                     <span class="side-menu-image">
                         <video muted loop src="./assets/video/menu/web1.mp4"></video>
                     </span>
                 </a>
-                <a href="#" class="side-menu-item side-menu-item-2">
+                <a href="./ui_ux.html" class="side-menu-item side-menu-item-2">
                     <span class="side-menu-link">UI/UX Design</span>
                     <span class="side-menu-image">
                         <video muted loop src="./assets/video/menu/UI_UX1.mp4"></video>
                     </span>
                 </a>
-                <a href="#" class="side-menu-item side-menu-item-3">
+                <a href="./development.html" class="side-menu-item side-menu-item-3">
                     <span class="side-menu-link">Mobile Development</span>
                     <span class="side-menu-image">
                         <video muted loop src="./assets/video/menu/mob1.mp4"></video>
@@ -156,19 +156,21 @@
 </div>
 <main class="app-wrapper">
 <!--    <div id="scroll-container" class="scroll-container">-->
-        <div class="landing-page ui-ux-page">
+        <div class="landing-page ui-ux-page" id="parallax-trigger">
             <div class="landing-section section-dark p-tb-150 landing-section-hero">
                 <div class="container">
                     <div class="sub-title mb-20 scrollAlfaActivated">
                         Delivers Flawless Digital Experiences
                     </div>
-                    <h1 class="mb-60 scrollAlfaActivated">UI/UX Design <img class="txt-icon txt-h1" src="assets/images/landings/ui-ix/smile-love.svg" alt=""></h1>
+                    <h1 class="scrollAlfaActivated">UI/UX Design <img class="txt-icon txt-h1" src="assets/images/landings/ui-ix/smile-love.svg" alt=""></h1>
                 </div>
-                <div class="scrollAlfaActivated">
-                    <img class="full-screen-img img-hero" src="assets/images/landings/ui-ix/main_img.png" alt="">
+                <div class="full-width-video mt-100 mb-60" id="video-parallax">
+                    <div class="video-block video-parallax" data-depth='3.5'>
+                        <video loop autoplay muted playsinline src="./assets/video/showreel.mp4"></video>
+                    </div>
                 </div>
                 <div class="container">
-                    <p class="mw-760 scrollAlfaActivated">
+                    <p class="mt-80 scrollAlfaActivated mw-760 mob-mt-40 mob-mb-40">
                         The following data speaks about the
                         importance of the work
                         of a UI UX design agency:</p>
@@ -210,6 +212,9 @@
                                 of people prefer to shop on mobile devices, which gives a new impetus to developing
                                 high-quality, responsive apps
                             </div>
+                        </div>
+                        <div class="col-12 btn-group scrollAlfaActivated">
+                            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anastasia-go'});return false;" class="btn-primary">Book a Consultation Session</a>
                         </div>
                     </div>
                 </div>

@@ -95,7 +95,16 @@
     }
   }
   @media (max-width: 767px) {
-    display: none;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    //top: -50px;
+    svg {
+      width: 100%;
+      height: 100%;
+
+    }
+    //display: none;
   }
 }
 .team-slider-wrapper {
@@ -105,6 +114,14 @@
     position: absolute;
     right: 0;
     top: 0;
+    @media (max-width: 767px) {
+      top: -85px;
+      font-size: 20px;
+      svg {
+        width: calc(100% - 1px);
+        height: auto;
+      }
+    }
     &.stopAnimation {
       svg {
         .loader {

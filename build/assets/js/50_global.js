@@ -62,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function(){
     teamSlider.on('slideNextTransitionStart', function () {
         const nextBtn = document.querySelector('.team-next');
         nextBtn.classList.add('stopAnimation')
+
     });
     teamSlider.on('slideNextTransitionEnd', function () {
         const nextBtn = document.querySelector('.team-next');
@@ -87,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function(){
         effect: "fade",
         autoHeight: true,
         autoplay: {
-            delay: 6000,
+            delay: 11000,
             disableOnInteraction: false,
         },
         navigation: {
@@ -100,9 +101,13 @@ document.addEventListener('DOMContentLoaded', function(){
         },
     });
     practiceSlider.on('slideChangeTransitionEnd', function () {
+        const nextBtn = document.querySelector('.arrow-button-next');
+        nextBtn.classList.remove('stopAnimation')
         document.querySelector('.practice-next .loader').classList.add('run');
     });
     practiceSlider.on('slideChangeTransitionStart', function () {
+        const nextBtn = document.querySelector('.arrow-button-next');
+        nextBtn.classList.add('stopAnimation');
         document.querySelector('.practice-next .loader').classList.remove('run');
     });
     practiceSlider.controller.control = practiceSliderImg;
