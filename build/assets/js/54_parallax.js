@@ -32,19 +32,22 @@ gsap.utils.toArray('.parallax-gsap').forEach((section, i) => {
         });
     }});
 
-
-const tl = gsap.timeline({
-    scrollTrigger: {
-        trigger: "#parallax-trigger",
-        start: "top top",
-        end: "bottom top",
-        scrub: true
-    }
-});
 const videoParallax  = document.querySelectorAll('.video-parallax');
-videoParallax.forEach(layer => {
-    console.log(layer);
-    const depth = layer.dataset.depth;
-    const movement = -(layer.offsetHeight * depth)
-    tl.to(layer, {y: movement, ease: "none"}, 0)
-})
+if(videoParallax.length > 0) {
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#parallax-trigger",
+            start: "top top",
+            end: "bottom top",
+            scrub: true
+        }
+    });
+
+    videoParallax.forEach(layer => {
+        console.log(layer);
+        const depth = layer.dataset.depth;
+        const movement = -(layer.offsetHeight * depth)
+        tl.to(layer, {y: movement, ease: "none"}, 0)
+    })
+}
+

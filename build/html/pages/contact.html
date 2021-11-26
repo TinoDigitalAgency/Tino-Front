@@ -1,0 +1,185 @@
+//= ../components/header/header.html
+    <main class="app-wrapper"> <!-- Add Class viewport and scroll will be works -->
+        <section class="contact-page">
+            <div class="contact-page-header">
+                <h1>Let’s work!</h1>
+                <p class="title">Contact us for any questions</p>
+                <div id="blob" class="tino-animation-logo">
+                    <video loop preload="metadata" muted="muted" autoplay playsinline poster="./assets/images/hero/poster.png" >
+                        <source src="./assets/images/hero/Tino_Blue_cycle.mp4" type="video/mp4">
+                        <source src="./assets/images/hero/Tino_Blue_cycle.webm" type="video/webm">
+                    </video>
+                </div>
+            </div>
+            <div class="container">
+                <div class="contact-page-form">
+                    <h4>✍️ Please tell us about your project</h4>
+                    <form action="" id="contact-page-form">
+                        <div class="form-data">
+                            <label>Subject</label>
+                            <div class="filter-type-container">
+                                <div class="select-styled" id="what-need" data-placeholder="I need ...">I need ...</div>
+                                <div class="filter-content-container">
+                                    <ul class="multiselect-dropdown" id="multiselect-what-need">
+                                        <p class="title">You can select several items</p>
+                                        <li>
+                                            <a tabindex="0">
+                                                <label class="checkbox" id="checkBoxLabel_1">
+                                                    <input type="checkbox" class="tino-data" name="subject" value="Logo/Branding">
+                                                    <span class="checkbox-text">Logo/Branding</span>
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a tabindex="0">
+                                                <label class="checkbox" id="checkBoxLabel_2">
+                                                    <input type="checkbox" class="tino-data" name="subject" value="Illustrations">
+                                                    <span class="checkbox-text">Illustrations</span>
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a tabindex="0">
+                                                <label class="checkbox" id="checkBoxLabel_3">
+                                                    <input type="checkbox" class="tino-data" name="subject" value="Web">
+                                                    <span class="checkbox-text">Web Design</span>
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a tabindex="0">
+                                                <label class="checkbox" id="checkBoxLabel_4">
+                                                    <input type="checkbox" class="tino-data" name="subject" value="App">
+                                                    <span class="checkbox-text">App Design</span>
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a tabindex="0">
+                                                <label class="checkbox" id="checkBoxLabel_5">
+                                                    <input type="checkbox" class="tino-data" name="subject" value="Development">
+                                                    <span class="checkbox-text">Development</span>
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a tabindex="0">
+                                                <label class="checkbox" id="checkBoxLabel_6">
+                                                    <input type="checkbox" class="tino-data" name="subject" value="Other">
+                                                    <span class="checkbox-text">Other</span>
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-data">
+                            <input type="text" id="name" data-validate class="tino-data" placeholder="Name">
+                        </div>
+                        <div class="form-data">
+                            <input type="email" id="email" data-validate class="tino-data" placeholder="Your Email">
+                        </div>
+                        <div class="form-data">
+                            <label>Budget</label>
+                            <div class="filter-type-container">
+                                <div class="select-styled budget" id="budget-inp" data-placeholder="Project budget">Project budget</div>
+                                <div class="filter-content-container">
+                                    <ul class="multiselect-dropdown" id="multiselect-budget">
+                                        <li>
+                                            <a tabindex="0">
+                                                <label class="checkbox" id="checkBoxLabel_10">
+                                                    <input type="radio" class="tino-data" name="budget" value="Less than $10,000">
+                                                    <span class="checkbox-text">Less than $10,000</span>
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a tabindex="0">
+                                                <label class="checkbox" id="checkBoxLabel_11">
+                                                    <input type="radio" class="tino-data" name="budget" value="$10,000 to $49,999">
+                                                    <span class="checkbox-text">$10,000 to $49,999</span>
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a tabindex="0">
+                                                <label class="checkbox" id="checkBoxLabel_12">
+                                                    <input type="radio" class="tino-data" name="budget" value="$50,000 to 100,000">
+                                                    <span class="checkbox-text">$50,000 to 100,000</span>
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a tabindex="0">
+                                                <label class="checkbox" id="checkBoxLabel_13">
+                                                    <input type="radio" class="tino-data" name="budget" value="$100,000 to 200,000">
+                                                    <span class="checkbox-text">$100,000 to 200,000</span>
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a tabindex="0">
+                                                <label class="checkbox" id="checkBoxLabel_14">
+                                                    <input type="radio" class="tino-data" name="budget" value="$200,000+">
+                                                    <span class="checkbox-text">$200,000+</span>
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-data">
+                            <input type="text" id="message" data-validate class="tino-data" placeholder="Message">
+                        </div>
+                        <button type="submit" class="submit-form">Send</button>
+                    </form>
+                </div>
+                <div class="contact-page-info">
+                    <div class="row-contact">
+                        <p class="small">Email us</p>
+                        <a href="mailto:info@tino.agency">info@tino.agency</a>
+                    </div>
+                    <div class="row-contact">
+                        <p class="small">Call us</p>
+                        <a href="tel:+12816029912">+1 (281) 602-9912</a>
+                    </div>
+                    <div class="row-contact">
+                        <p class="small">Houston, TX 77058</p>
+                        <a>1110 E NASA Pkwy Suite 545H</a>
+                    </div>
+                    <div class="question">
+                        <div class="left-side">
+                            <img src="./assets/images/contact/Asya@2x.png" alt="">
+                            <h4>Anastasia Golovko</h4>
+                            <p>COO</p>
+                        </div>
+                        <div class="right-side">
+                            <h2>Do you have any questions?</h2>
+                            <p>Please tell us about your story</p>
+                            <!-- Calendly link widget begin -->
+                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anastasia-go'});return false;">Book 30 min call</a>
+                            <!-- Calendly link widget end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+//= ../components/footer/footer.html
+//= ../components/footer/footer-lib.html

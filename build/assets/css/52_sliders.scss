@@ -227,37 +227,38 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
+          width: 100%;
 
-          &.img-slide-1{
-            width: calc(100% + 14px);
-            left: calc(50% + 6px);
-            top: calc(50% - 25px);
-          }
-          &.img-slide-2{
-            width: calc(100% + 29px);
-            left: calc(50% + 10px);
-            top: calc(50% - 28px);
-          }
-          &.img-slide-3{
-            width: calc(100% + 29px);
-            left: calc(50% - 1px);
-            top: calc(50% - 28px);
-          }
-          &.img-slide-4{
-            width: calc(100% + 47px);
-            left: calc(50% - 8px);
-            top: calc(50% - 28px);
-          }
-          &.img-slide-5{
-            width: calc(100% + 100px);
-            left: calc(50% + 8px);
-            top: calc(50% - 37px);
-          }
-          &.img-slide-6{
-            width: calc(100% + 94px);
-            left: calc(50% + 16px);
-            top: calc(50% + 10px);
-          }
+          //&.img-slide-1{
+          //  width: calc(100% + 14px);
+          //  left: calc(50% + 6px);
+          //  top: calc(50% - 25px);
+          //}
+          //&.img-slide-2{
+          //  width: calc(100% + 29px);
+          //  left: calc(50% + 10px);
+          //  top: calc(50% - 28px);
+          //}
+          //&.img-slide-3{
+          //  width: calc(100% + 29px);
+          //  left: calc(50% - 1px);
+          //  top: calc(50% - 28px);
+          //}
+          //&.img-slide-4{
+          //  width: calc(100% + 47px);
+          //  left: calc(50% - 8px);
+          //  top: calc(50% - 28px);
+          //}
+          //&.img-slide-5{
+          //  width: calc(100% + 100px);
+          //  left: calc(50% + 8px);
+          //  top: calc(50% - 37px);
+          //}
+          //&.img-slide-6{
+          //  width: calc(100% + 94px);
+          //  left: calc(50% + 16px);
+          //  top: calc(50% + 10px);
+          //}
 
           @media (max-width: 990px) {
             width: 100%!important;

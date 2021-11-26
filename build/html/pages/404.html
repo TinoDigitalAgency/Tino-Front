@@ -3,9 +3,81 @@
         <div class="container">
             <div class="not-found-wrapper">
                 <h2>Sorry, We Could’t Find That</h2>
-                <img src="/assets//images/number@2x.png" class="numbers" alt="">
+                <img src="./assets/images/number@2x.png" class="numbers" alt="">
             </div>
             <a href="/" class="btn-not-found">Take me home</a>
         </div>
     </section>
+    <style>
+        .not-found{
+            background-size: cover;
+            min-height: 100vh;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .not-found h2{
+            font-size: 40px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.38;
+            font-family: 'Graphit-Light', sans-serif;
+            width: 350px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .not-found .btn-not-found{
+            border: solid 1px rgba(255, 255, 255, 0.25);
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.5;
+            color: #fff;
+            font-family: 'Graphit', sans-serif;
+            height: 70px;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s ease;
+        }
+        .not-found .btn-not-found:hover{
+            background-color: rgba(255, 255, 255, 0.25);
+        }
+        .not-found .numbers{
+            width: 375px;
+            margin-left: -114px;
+            position: relative;
+            z-index: -1;
+        }
+        .not-found-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        @media (max-width: 767px){
+            .not-found .btn-not-found{
+                width: 100%;
+            }
+            .not-found-wrapper{
+                flex-direction: column;
+            }
+            .not-found .numbers{
+                width: 100%;
+                margin-left: 0;
+            }
+            .not-found h2{
+                width: 100%;
+            }
+        }
+        .contacts, .footer{
+            display: none;
+        }
+    </style>
+
 //= ../components/footer/footer-lib.html
