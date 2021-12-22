@@ -153,6 +153,11 @@
     li {
       padding: 0;
       overflow: hidden;
+      @media (max-width: 767px){
+        & + li {
+          margin-top: 15px;
+        }
+      }
       a {
         font-family: Graphit-Medium;
         font-size: 50px;
@@ -181,6 +186,10 @@
         @media (max-width: 991px){
           font-size: 36px;
           line-height: 1.5;
+        }
+        @media (max-width: 767px){
+          font-size: 32px;
+          line-height: 1;
         }
         span {
           display: block;
@@ -356,5 +365,11 @@
         }
       }
     }
+  }
+}
+.mobile-submenu {
+  margin-top: 20px;
+  @media (min-width: 768px) {
+    display: none;
   }
 }

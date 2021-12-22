@@ -49,8 +49,23 @@
         padding-top: 140px;
       }
     }
+    .hello-text {
+      h1 {
+        font-size: 25px;
+        line-height: 35px;
+        font-family: Graphit-Light;
+        position: relative;
+        z-index: 1;
+        @media (max-width: 767px) {
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+    }
     .hero-abs {
       @media (max-width: 767px) {
+        display: flex;
+        justify-content: center;
         position: absolute;
         top: 320px;
         left: 50%;

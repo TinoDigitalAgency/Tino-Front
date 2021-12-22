@@ -48,6 +48,11 @@
   }
   .main-menu-btn {
     padding-left: 40px;
+    &.main-menu-btn-show-on-mobile {
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
   }
 }
 .menu-btn {

@@ -550,7 +550,7 @@
       position: relative;
       border-bottom: 1px solid rgba(#fff, 0.15);
       cursor: pointer;
-
+      display: block;
       &:last-of-type{
         border-bottom: 0;
         &::after{
