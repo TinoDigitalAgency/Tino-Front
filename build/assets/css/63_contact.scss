@@ -259,6 +259,16 @@
         font-size: 16px;
         color: red;
       }
+      .form-data {
+        &.error {
+          input[type=text], input[type=email] {
+            border-bottom-color: rgba(red, .4);
+            &::placeholder {
+              color: rgba(red, 1);
+            }
+          }
+        }
+      }
     }
   }
   &-info{
@@ -598,4 +608,53 @@
       }
     }
   }
+}
+
+.form-data {
+  position: relative;
+  .error-message {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    font-size: 15px;
+    color: red;
+    opacity: .6;
+  }
+}
+.success-form-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: $mainBlack;
+  z-index: 8;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 400ms;
+  text-align: center;
+  &.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  #like {
+    margin-bottom: 40px;
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 121px;
+  }
+  .h1 {
+    margin-bottom: 24px;
+  }
+  .success-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.submit-form {
+  cursor: pointer;
 }

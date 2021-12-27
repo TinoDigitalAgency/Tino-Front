@@ -1,4 +1,4 @@
-//= ../components/header/header.html
+//= ../components/header/header-simple.html
     <main class="app-wrapper"> <!-- Add Class viewport and scroll will be works -->
         <section class="contact-page">
             <div class="contact-page-header">
@@ -81,10 +81,12 @@
                             </div>
                         </div>
                         <div class="form-data">
-                            <input type="text" id="name" data-validate class="tino-data" placeholder="Name">
+                            <input type="text" id="name" data-validate class="tino-data valid-input" placeholder="Name">
+                            <span class="error-message"></span>
                         </div>
                         <div class="form-data">
                             <input type="email" id="email" data-validate class="tino-data" placeholder="Your Email">
+                            <span class="error-message"></span>
                         </div>
                         <div class="form-data">
                             <label>Budget</label>
@@ -142,9 +144,10 @@
                             </div>
                         </div>
                         <div class="form-data">
-                            <input type="text" id="message" data-validate class="tino-data" placeholder="Message">
+                            <input type="text" id="message" data-validate class="tino-data valid-input" placeholder="Message">
+                            <span class="error-message"></span>
                         </div>
-                        <button type="submit" class="submit-form">Send</button>
+                        <button type="submit" class="submit-form" id="submit-form-btn">Send</button>
                     </form>
                 </div>
                 <div class="contact-page-info">
@@ -181,5 +184,6 @@
         </section>
     </main>
 
+//= ../components/forms/form-success.html
 //= ../components/footer/footer.html
 //= ../components/footer/footer-lib.html

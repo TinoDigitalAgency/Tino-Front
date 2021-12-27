@@ -9,6 +9,7 @@ const initLottie = () => {
     const smileyCallAnimationElement = document.getElementById('smile-call-animation');
 
 
+
     if(illustrationAnimationElement) {
         illustrationAnimation = bodymovin.loadAnimation({
             container: illustrationAnimationElement,
