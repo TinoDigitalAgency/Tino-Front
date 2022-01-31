@@ -58,7 +58,7 @@
     font-size: 45px;
     font-weight: 500;
     line-height: 60px;
-    font-family: Graphit-Medium;
+    font-family: NeueMachina;
     @media (max-width: 767px) {
       font-size: 20px;
       line-height: 30px;
@@ -79,11 +79,11 @@
   }
 
   .gray-subtext{
-    font-family: Graphit-Light;
+    font-weight: 300;
     font-size: 25px;
     color: rgba(white, 0.5);
     span{
-      font-family: Graphit-Medium;
+      font-family: NeueMachina;
     }
   }
 
@@ -328,7 +328,7 @@
           position: absolute;
           left: 0;
           top: 0;
-          font-family: Graphit-Light;
+          font-weight: 300;
           border-width: 2px;
           font-size: 120px;
           font-weight: normal;
@@ -459,7 +459,7 @@
       .name{
         font-size: 40px;
         line-height: 1;
-        font-family: Graphit-Medium;
+        font-family: NeueMachina;
       }
       .dev_type{
         font-size: 10px;
@@ -996,7 +996,7 @@
     }
 
     h1{
-      font-family: Graphit-Medium;
+      font-family: NeueMachina;
       font-weight: 500;
     }
     h2{

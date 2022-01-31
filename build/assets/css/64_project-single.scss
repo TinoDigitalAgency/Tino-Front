@@ -89,7 +89,7 @@ body {
     align-items: flex-end;
   }
   .short-description {
-    font-family: Graphit-Light;
+    font-weight: 300;
     font-weight: 400;
     font-size: 40px;
     color: #FFF7E7;
@@ -105,7 +105,7 @@ body {
   .project-date {
     //padding-bottom: 50px;
     text-align: right;
-    font-family: Graphit-Light;
+    font-weight: 300;
     @media (max-width: 990px) {
       text-align: left;
       flex: 0 0 100%;
@@ -205,7 +205,7 @@ body {
     //margin-bottom: 100px;
   }
   .project-technology {
-    font-family: Graphit-Light;
+    font-weight: 300;
     margin-bottom: -100px;
     @media (max-width: 767px) {
       margin-bottom: 0;
@@ -643,7 +643,7 @@ body {
       }
     }
     p {
-      font-family: Graphit-Light;
+      font-weight: 300;
       font-size: 40px;
       color: #FFF7E7;
       letter-spacing: 0;
@@ -690,7 +690,7 @@ body {
   }
   .statistic-value {
     font-size: 110px;
-    font-family: Graphit-Medium;
+    font-family: NeueMachina;
     color: #fff;
     margin-bottom: 20px;
     text-align: center;
@@ -708,7 +708,7 @@ body {
     }
   }
   .statistic-title {
-    font-family: Graphit-Light;
+    font-weight: 300;
     font-size: 20px;
     line-height: 1.25;
     text-align: center;
@@ -738,7 +738,7 @@ body {
     padding: 54px 15px 44px 15px;
     .statistic-value {
       margin-bottom: 0;
-      font-family: Graphit-Light;
+      font-weight: 300;
       font-size: 85px;
       color: #FFF7E7;
       letter-spacing: 0;
@@ -816,7 +816,7 @@ body {
         left: 0;
         top: 5px;
         opacity: 0.5;
-        font-family: Graphit-Light;
+        font-weight: 300;
         font-size: 20px;
         color: #FFF7E7;
         letter-spacing: 0;
@@ -901,7 +901,7 @@ body {
     flex: 0 0 57%;
     max-width: 57%;
     padding-left: 100px;
-    font-family: Graphit-Light;
+    font-weight: 300;
     font-size: 25px;
     color: #FFF7E7;
     letter-spacing: 0;
@@ -964,7 +964,7 @@ body {
 }
 .cite-block {
   padding: 75px 85px;
-  font-family: Graphit-Light;
+  font-weight: 300;
   font-size: 40px;
   color: #FFF7E7;
   letter-spacing: 0;
@@ -1878,7 +1878,7 @@ body {
     &__text {
       flex: 0 0 50%;
       max-width: 50%;
-      font-family: Graphit-Light;
+      font-weight: 300;
       font-size: 25px;
       color: #FFF7E7;
       letter-spacing: 0;
@@ -1889,7 +1889,7 @@ body {
         margin-top: 60px;
       }
       h3 {
-        font-family: Graphit-Medium;
+        font-family: NeueMachina;
         font-size: 35px;
         color: #FFF7E7;
         letter-spacing: 0;
@@ -2272,7 +2272,7 @@ body {
     padding: 30px 0;
   }
   h4 {
-    font-family: Graphit-Medium;
+    font-family: NeueMachina;
     font-size: 35px;
     color: #FFF7E7;
     letter-spacing: 0;
@@ -2287,7 +2287,7 @@ body {
   }
   p {
     margin: 0;
-    font-family: Graphit-Light;
+    font-weight: 300;
     font-size: 25px;
     color: #FFF7E7;
     letter-spacing: 0;
@@ -2406,7 +2406,7 @@ body {
     }
   }
   h3 {
-    font-family: Graphit-Medium;
+    font-family: NeueMachina;
     font-size: 35px;
     color: #FFFFFF;
     letter-spacing: 0;
@@ -2422,7 +2422,7 @@ body {
     }
   }
   p {
-    font-family: Graphit-Light;
+    font-weight: 300;
     font-size: 25px;
     color: #FFF7E7;
     letter-spacing: 0;
@@ -2684,7 +2684,7 @@ body {
     color: #fff;
     line-height: 1.25;
     text-align: center;
-    font-family: Graphit-Light;
+    font-weight: 300;
 
     @media (max-width: 767px) {
       flex: 0 0 100%;
@@ -2770,7 +2770,7 @@ body {
   border-radius: 40px;
   font-size: 20px;
   line-height: 1.25;
-  font-family: Graphit-Light;
+  font-weight: 300;
   white-space: nowrap;
   @media (max-width: 767px) {
     padding: 28px;
@@ -2800,7 +2800,7 @@ body {
     }
   }
   .next-title {
-    font-family: Graphit-Light;
+    font-weight: 300;
     font-size: 25px;
     line-height: 1.2;
     color: #fff;
@@ -2961,7 +2961,7 @@ body {
   .projects-header-title {
     h1 {
       font-size: 80px;
-      font-family: Graphit-Medium;
+      font-family: NeueMachina;
       transform: none;
       margin-top: 0;
       margin-bottom: 0;
@@ -2972,7 +2972,7 @@ body {
   }
   .sub-title {
     font-size: 25px;
-    font-family: Graphit-Light;
+    font-weight: 300;
     margin-bottom: 20px;
     margin-top: 0;
     @media (max-width: 575px) {
@@ -2989,7 +2989,7 @@ body {
     background: transparent;
     border-radius: 0;
     cursor: pointer;
-    font-family: Graphit-Medium;
+    font-family: NeueMachina;
     white-space: nowrap;
     @media (max-width: 575px) {
       font-size: 20px;
@@ -3073,7 +3073,7 @@ body {
       background: transparent;
       padding: 0;
       font-size: 50px;
-      font-family: Graphit-Medium;
+      font-family: NeueMachina;
       line-height: 1.4;
       color: #0a0a0a;
       cursor: pointer;

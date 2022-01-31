@@ -28,7 +28,7 @@
   .projects-header-title {
     h1 {
       font-size: 80px;
-      font-family: Graphit-Medium;
+      font-family: NeueMachina;
       transform: none;
       margin-top: 0;
       margin-bottom: 0;
@@ -40,7 +40,7 @@
   }
   .sub-title {
     font-size: 25px;
-    font-family: Graphit-Light;
+    font-weight: 300;
     margin-bottom: 20px;
     margin-top: 0;
     @media (max-width: 575px) {
@@ -57,7 +57,7 @@
     background: transparent;
     border-radius: 0;
     cursor: pointer;
-    font-family: Graphit-Medium;
+    font-family: NeueMachina;
     white-space: nowrap;
     @media (max-width: 575px) {
       font-size: 20px;

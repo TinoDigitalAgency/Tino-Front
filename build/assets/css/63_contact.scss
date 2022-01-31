@@ -13,7 +13,7 @@
     margin-top: -100px;
   }
   h1{
-    font-family: Graphit-Medium;
+    font-family: NeueMachina;
     font-size: 110px;
     font-weight: 500;
     line-height: 1;
@@ -29,7 +29,7 @@
     }
   }
   .title{
-    font-family: Graphit-Light;
+    font-weight: 300;
     font-size: 25px;
     line-height: 1.2;
     color: $whiteColor;
@@ -43,7 +43,7 @@
   }
   h2{
     margin-bottom: 100px;
-    font-family: Graphit-Light;
+    font-weight: 300;
     color: $whiteColor;
     margin-top: 0;
     @media (max-width: 767px) {
@@ -107,7 +107,7 @@
           left: 30px;
         }
         span.category{
-          font-family: Graphit-Light;
+          font-weight: 300;
           font-size: 20px;
           color: $whiteColor;
           letter-spacing: 0;
@@ -119,7 +119,7 @@
           }
         }
         p.name{
-          font-family: Graphit-Medium;
+          font-family: NeueMachina;
           font-size: 40px;
           color: $whiteColor;
           letter-spacing: 0;
@@ -285,7 +285,7 @@
         margin-bottom: 0;
       }
       p{
-        font-family: Graphit-Light;
+        font-weight: 300;
         font-size: 20px;
         color: #FFFFFF;
         letter-spacing: 0;
@@ -384,7 +384,7 @@
           letter-spacing: 0;
           text-align: center;
           line-height: 30px;
-          font-family: Graphit-Light;
+          font-weight: 300;
           margin: 0;
         }
       }
@@ -411,7 +411,7 @@
           color: #FFFFFF;
           letter-spacing: 0;
           line-height: 30px;
-          font-family: Graphit-Light;
+          font-weight: 300;
           margin-bottom: 80px;
           @media (max-width: 991px){
             margin-bottom: 20px;

@@ -41,43 +41,43 @@
   }
 }
 
-.play-showreal {
-  background: transparent;
-  border: none;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 166px;
-  height: 166px;
-  color: #fff;
-  font-size: 23px;
-  cursor: pointer;
-  @media (max-width: 767px) {
-    width: 80px;
-    height: 80px;
-    font-size: 16px;
-  }
-  .rotate-image {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    transform-origin: center center;
-    animation: RotatePlayText 10s forwards infinite linear;
-    width: 100%;
-    height: 100%;
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
-}
+//.play-showreal {
+//  background: transparent;
+//  border: none;
+//  padding: 0;
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//  position: relative;
+//  width: 166px;
+//  height: 166px;
+//  color: #fff;
+//  font-size: 23px;
+//  cursor: pointer;
+//  @media (max-width: 767px) {
+//    width: 80px;
+//    height: 80px;
+//    font-size: 16px;
+//  }
+//  .rotate-image {
+//    position: absolute;
+//    left: 50%;
+//    top: 50%;
+//    transform: translate(-50%, -50%);
+//    transform-origin: center center;
+//    animation: RotatePlayText 10s forwards infinite linear;
+//    width: 100%;
+//    height: 100%;
+//    img {
+//      width: 100%;
+//      height: auto;
+//    }
+//  }
+//}
 
 .small-title {
   opacity: 0.5;
-  font-family: Graphit-Light;
+  font-weight: 300;
   font-size: 25px;
   color: $whiteColor;
   letter-spacing: 0;
@@ -89,7 +89,7 @@
     color: rgba($whiteColor, .5);
   }
   span {
-    font-family: Graphit-Medium;
+    font-family: NeueMachina;
   }
 }
 .about-text {
@@ -221,7 +221,7 @@
       display: block;
     }
     &__category {
-      font-family: Graphit-Light;
+      font-weight: 300;
       font-size: 20px;
       color: #FFF7E7;
       letter-spacing: 0;
@@ -234,7 +234,7 @@
       }
     }
     &__name {
-      font-family: Graphit-Medium;
+      font-family: NeueMachina;
       font-size: 40px;
       color: #FFF7E7;
       letter-spacing: 0;
@@ -482,7 +482,7 @@
   }
   .text {
     p {
-      font-family: Graphit-Light;
+      font-weight: 300;
       font-size: 40px;
       letter-spacing: 0;
       line-height: 50px;

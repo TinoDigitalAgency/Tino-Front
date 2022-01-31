@@ -1,7 +1,19 @@
 @import "./variables";
+@font-face {
+  font-family: 'NeueMachina';
+  src: url('..fonts/NeueMachine/NeueMachina-Bold.eot');
+  src: local('Neue Machina Bold'), local('NeueMachina-Bold'),
+  url('..fonts/NeueMachineNeueMachina-Bold.eot?#iefix') format('embedded-opentype'),
+  url('..fonts/NeueMachineNeueMachina-Bold.woff2') format('woff2'),
+  url('..fonts/NeueMachineNeueMachina-Bold.woff') format('woff'),
+  url('..fonts/NeueMachineNeueMachina-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
 body {
-  background-color: #070608;
-  font-family: Graphit-Light;
+  background-color: #191919;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
   font-size: 20px;
   line-height: 1.5;
   color: #fff7e7;
@@ -10,14 +22,14 @@ body {
 // FONT SIZES
 
 h1, .h1 {
-  font-family: Graphit;
+  font-family: NeueMachina;
   font-size: 80px;
   color: $whiteColor;
   letter-spacing: 0;
   line-height: 80px;
 }
 h2, .h2 {
-  font-family: Graphit;
+  font-family: NeueMachina;
   font-size: 60px;
   color: $whiteColor;
   letter-spacing: 0;
@@ -28,7 +40,7 @@ h3, .h3 {
   line-height: 50px;
   color: $whiteColor;
   margin-bottom: 30px;
-  font-family: Graphit-Light;
+  font-weight: 300;
   @media (max-width: 990px) {
     font-size: 30px;
     line-height: 40px;

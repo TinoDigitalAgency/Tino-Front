@@ -6,7 +6,7 @@
   border: none;
   border-radius: 0;
   font-size: 30px;
-  font-family: Graphit-Medium;
+  font-family: NeueMachina;
   color: $whiteColor;
   transition: all 400ms;
   cursor: pointer;
@@ -19,6 +19,28 @@
     padding: 20px;
   }
 }
+.large-primary-btn {
+  padding: 28px 62px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  color: $whiteColor;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  background: url(../images/btns/primary-large-bg.svg) center center no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  transition: all 400ms;
+  &:hover {
+    opacity: .9;
+  }
+  span {
+    margin-right: 15px;
+  }
+}
 
 .btn-bordered {
   background: transparent;
@@ -26,7 +48,7 @@
   border-radius: 0;
   font-size: 25px;
   line-height: 35px;
-  font-family: Graphit-Medium;
+  font-family: NeueMachina;
   color: $whiteColor;
   display: inline-flex;
   //transition: all 400ms;
@@ -120,7 +142,7 @@
   display: inline-flex;
   padding-bottom: 20px;
   position: relative;
-  font-family: Graphit-Light;
+  font-weight: 300;
   font-size: 20px;
   color: #FFF7E7;
   letter-spacing: 0;

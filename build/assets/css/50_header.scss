@@ -133,7 +133,7 @@
         padding: 10px 29px;
         position: relative;
         z-index: 1;
-        background: url(../images/btn-border.svg) center center no-repeat;
+        background: url(../images/btns/border-radius-btn.svg) center center no-repeat;
         background-size: 100% 100%;
         &:hover {
           opacity: .8
@@ -145,7 +145,7 @@
     display: block;
     padding: 0 10px;
     color: #fff7e7;
-    font-family: Graphit-Light;
+    font-weight: 300;
     transition: all 400ms;
     &.muted {
       opacity: .25;
