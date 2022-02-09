@@ -3,10 +3,10 @@
   font-family: 'NeueMachina';
   src: url('..fonts/NeueMachine/NeueMachina-Bold.eot');
   src: local('Neue Machina Bold'), local('NeueMachina-Bold'),
-  url('..fonts/NeueMachineNeueMachina-Bold.eot?#iefix') format('embedded-opentype'),
-  url('..fonts/NeueMachineNeueMachina-Bold.woff2') format('woff2'),
-  url('..fonts/NeueMachineNeueMachina-Bold.woff') format('woff'),
-  url('..fonts/NeueMachineNeueMachina-Bold.ttf') format('truetype');
+  url('..fonts/NeueMachine/NeueMachineNeueMachina-Bold.eot?#iefix') format('embedded-opentype'),
+  url('..fonts/NeueMachine/NeueMachineNeueMachina-Bold.woff2') format('woff2'),
+  url('..fonts/NeueMachine/NeueMachineNeueMachina-Bold.woff') format('woff'),
+  url('..fonts/NeueMachine/NeueMachineNeueMachina-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -139,6 +139,12 @@ h3, .h3 {
 .mt-60{
   margin-top: 60px;
 }
+.mt-70{
+  margin-top: 70px;
+}
+.pb-70{
+  padding-bottom: 70px;
+}
 .mt-50{
   margin-top: 50px;
 }
@@ -177,6 +183,12 @@ h3, .h3 {
 }
 .mob-pb-0{
   padding-bottom: 0!important;
+}
+.pb-220{
+  padding-bottom: 220px;
+}
+.pt-220{
+  padding-top: 220px;
 }
 
 
