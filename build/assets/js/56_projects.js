@@ -27,9 +27,13 @@ const filterToggle = (target, grid, event) => {
     let filterValue = target.getAttribute('data-filter');
     grid.arrange({ filter: filterValue });
 }
+if (FILTER_TRIGGER) {
+    FILTER_TRIGGER.addEventListener('click', filterHandler);
+}
+if (FILTER_OVERLAY) {
+    FILTER_OVERLAY.addEventListener('click', filterClose);
+}
 
-FILTER_TRIGGER.addEventListener('click', filterHandler);
-FILTER_OVERLAY.addEventListener('click', filterClose);
 window.addEventListener('load', function(){
     let grid = new Isotope('.grid', {
         itemSelector: '.element-item',
