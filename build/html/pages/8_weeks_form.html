@@ -1,0 +1,109 @@
+//= ../components/header/header.html
+<main class="app-wrapper">
+    <div class="landing-page eight_weeks_form">
+        <div class="landing-section section-dark landing-section-hero mob-pt-80">
+            <div class="landing-section-hero-1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <h1 class="scrollAlfaActivated">
+                                How to <img class="txt-icon txt-h1 lg-60" src="assets/images/landings/eight_weeks/like.svg" alt=""> Successfully
+                                <img class="txt-icon txt-h1 lg-70" src="assets/images/landings/eight_weeks/arrow_circle.svg" alt="">
+                                Launch a Product?
+                            </h1>
+                            <p class="mt-40 scrollAlfaActivated">Having helped many companies around the world to enter the market relying on our expertise, we are excited to share with you our proven system to build a successful product. Following this simple process, you will be able to reduce your time-to-market and maximize return on investment. </p>
+                        </div>
+                        <div class="col-6">
+                            <div class="form">
+                                <div class="img scrollAlfaActivated">
+                                    <img src="assets/images/landings/eight_weeks/book.png" srcset="assets/images/landings/eight_weeks/book2x.png 2x" alt="">
+                                </div>
+                                <div class="form-section">
+                                    <div class="form-inner scrollAlfaActivated" id="form">
+                                        <input type="text" onclick="resetFocus()" name="text" id="input_name" placeholder="First name">
+                                        <input type="email" onclick="resetFocus()" name="email" id="input_email" placeholder="E-mail">
+                                        <div class="btn-form btn-primary" onclick="downloadBtn()">
+                                            <img src="assets/images/landings/eight_weeks/download_btn.svg" alt="">
+                                            Download Free eBook
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-list mt-100">
+                        <div class="row scrollAlfaActivated">
+                            <div class="col-4">
+                                <div class="bottom-list__item">
+                                    <img src="assets/images/landings/eight_weeks/img-b-1.png" alt="">
+                                    This book has our proven idea-to-market process
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="bottom-list__item">
+                                    <img src="assets/images/landings/eight_weeks/img-b-2.png" alt="">
+                                    Learn 9-step system to creating a clickable prototype
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="bottom-list__item">
+                                    <img src="assets/images/landings/eight_weeks/img-b-3.png" alt="">
+                                    Tools to get started planning a successful product launch
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="bottom-list__item">
+                                    <img src="assets/images/landings/eight_weeks/img-b-4.png" alt="">
+                                    Get to know how to validate your product idea in 8 weeks
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script>
+    const resetFocus = () => {
+        downloadBtn(true)
+    }
+
+    const downloadBtn = (reset = false) => {
+        const form = document.getElementById('form');
+        for (const i of form.getElementsByTagName('input')) {
+            if (!reset) {
+                if (i.value === '' || (i.type === 'email' && !validateEmail(i.value))) {
+                    i.className = 'error';
+
+                    setTimeout(() => {
+                        i.className = '';
+                    }, 3000)
+                } else {
+                    downloadURI(
+                        'assets/images/landings/eight_weeks/book2.png',
+                        'book'
+                    )
+                }
+            } else {
+                i.className = '';
+            }
+        }
+    }
+
+    const validateEmail = (email) => {
+        const reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return reg.test(email);
+    };
+
+    const downloadURI = (uri, name) => {
+        let link = document.createElement("a");
+        link.download = name;
+        link.href = uri;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        delete link;
+    }
+</script>
+//= ../components/footer/footer-lib.html

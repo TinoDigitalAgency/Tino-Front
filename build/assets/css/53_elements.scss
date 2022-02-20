@@ -889,6 +889,10 @@
 }
 
 .circle-type-list{
+  &.dark li::after{
+    background-color: #191919;
+  }
+
   li{
     position: relative;
     padding-left: 70px;
@@ -911,6 +915,7 @@
       @media (max-width: 767px){
         width: 15px;
         height: 15px;
+        top: 0;
       }
     }
     &::after{
@@ -1020,5 +1025,41 @@
     width: auto;
     border: 3px $whiteColor solid;
     border-radius: 16px;
+  }
+}
+
+
+.fake-input{
+  position: relative;
+  padding-left: 100px;
+
+  &_icon{
+    margin-right: 45px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &_label{
+    font-size: 20px;
+    line-height: 30px;
+    opacity: 0.5;
+    margin-bottom: 20px;
+  }
+  &_value{
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  &-hr{
+    width: calc(100% - 100px);
+    height: 2px;
+    background-color: #554D5E;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 100px;
   }
 }
