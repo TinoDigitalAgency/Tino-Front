@@ -26,13 +26,13 @@
 
   h1,.h1{
     font-size: 80px;
-    font-family: Graphit;
+    //font-family: Graphit;
     line-height: 1.25;
     color: $whiteColor;
   }
 
   h2,.h2{
-    font-family: Graphit;
+    //font-family: Graphit;
     font-size: 60px;
     line-height: 1.33;
   }
@@ -92,6 +92,10 @@
     line-height: 1.6;
   }
 
+  b{
+    font-weight: 500;
+  }
+
   @media (max-width: 767px){
     p,
     .sub-title{
@@ -118,7 +122,21 @@
       line-height: 35px!important;
     }
 
-    &.pt-150,
+    .pt-310{
+      padding-top: 80px;
+    }
+
+    .pb-250{
+      padding-bottom: 80px;
+    }
+
+    &.pt-150 {
+      padding-top: 80px;
+    }
+    &.pb-150 {
+      padding-bottom: 80px;
+    }
+
     &.p-tb-150{
       padding-top: 80px;
       padding-bottom: 80px;
@@ -1677,5 +1695,388 @@
     height: 100%;
     //max-height: 100vh;
     object-fit: cover;
+  }
+}
+
+.eight_weeks {
+
+  .landing-section-hero{
+    padding-top: 140px!important;
+  }
+
+  .landing-section-hero-1{
+    position: relative;
+
+    .img{
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 40%;
+
+      @media (max-width: 991px) {
+        display: none;
+      }
+    }
+
+    .underline{
+      position: relative;
+      &::after{
+        content: '';
+        width: calc(100% + 40px);
+        background-image: url("../images/landings/eight_weeks/line.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 50px;
+        position: absolute;
+        bottom: -18px;
+        left: -10px;
+        z-index: -1;
+      }
+    }
+  }
+
+  .landing-section-hero-2{
+    position: relative;
+
+    .col-6{
+      @media (max-width: 991px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+
+    .img{
+      position: absolute;
+      left: 0;
+      top: 55%;
+      width: 55%;
+      img{
+        transform: translateY(-50%);
+      }
+      @media (max-width: 991px) {
+        display: none;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .circle-fade{
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid white;
+      display: inline-block;
+      width: 220px;
+      height: 220px;
+      opacity: 0;
+      z-index: -1;
+
+      &.position{
+        &-1{
+          bottom: 50%;
+          left: 2%;
+          animation: circleAnim 5s 1s forwards infinite;
+        }
+        &-2{
+          bottom: 0.5%;
+          left: 10%;
+          animation: circleAnim 5s 4s forwards infinite;
+        }
+        &-3{
+          bottom: 10%;
+          left: 18%;
+          animation: circleAnim 5s 3s forwards infinite;
+        }
+        &-4{
+          bottom: 40%;
+          left: 32%;
+          animation: circleAnim 5s 7s forwards infinite;
+        }
+        &-5{
+          bottom: 55%;
+          left: 55%;
+          animation: circleAnim 5s 2s forwards infinite;
+        }
+        &-6{
+          bottom: 2.5%;
+          left: 65%;
+          animation: circleAnim 5s 2s forwards infinite;
+        }
+        &-7{
+          bottom: 38%;
+          left: 90%;
+          animation: circleAnim 5s 6s forwards infinite;
+        }
+        &-8{
+          bottom: 5%;
+          left: 69%;
+          animation: circleAnim 5s 0s forwards infinite;
+        }
+      }
+    }
+  }
+
+  .prototype_weeks{
+    position: relative;
+    z-index: 2;
+
+    .col-6{
+      @media (max-width: 991px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+
+    .img{
+     position: absolute;
+      width: 55%;
+      top: 100px;
+      right: 0;
+      @media (max-width: 991px) {
+        display: none;
+      }
+    }
+
+    .img-bg1{
+      position: absolute;
+      bottom: 70px;
+      right: 50%;
+      transform: translate(-40%, 0%);
+      z-index: -1;
+    }
+    .img-bg2{
+      position: absolute;
+      bottom: -30px;
+      left: 60%;
+      z-index: -1;
+      width: 600px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .gradient-num-col{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .action-steps{
+    position: relative;
+
+    .col{
+      @media (max-width: 991px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+
+    .img-left{
+      position: absolute;
+      top: 150px;
+      left: 0;
+    }
+    .img-right{
+      position: absolute;
+      bottom: 68px;
+      right: 0;
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+
+  .deliverable-section{
+    background-image: url("../images/landings/eight_weeks/deliverables-bg.png");
+    background-position: right 80px;
+    background-repeat: no-repeat;
+
+    .col{
+      @media (max-width: 991px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      &:nth-of-type(2) {
+        margin-top: 80px;
+      }
+    }
+
+    .full-width{
+      padding-left: 40px;
+      padding-right: 40px;
+      position: relative;
+
+      &::after{
+        content: '';
+        width: 100%;
+        height: 126px;
+        background: linear-gradient(180deg, rgba(7, 6, 8, 0) 0%, #191919 100%);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+.eight_weeks_form{
+  min-height: 100vh;
+  background-image: url("../images/landings/eight_weeks/back-form.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+
+  .landing-section{
+    padding-top: 200px;
+    padding-bottom: 70px;
+  }
+
+  .txt-h1{
+    vertical-align: baseline;
+    margin-bottom: -4px;
+  }
+
+  .form{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 150px;
+
+    &-section{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: flex-end;
+
+      &::after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        backdrop-filter: blur(100px);
+        z-index: -1;
+      }
+    }
+
+    &-inner{
+      width: 100%;
+      padding: 0 60px 38px 60px;
+      @media (max-width: 767px) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      input{
+        color: #FFF7E7;
+        background-color: transparent;
+        outline: none;
+        padding: 20px 0;
+        margin-top: 20px;
+        width: 100%;
+        display: block;
+        border: none;
+        font-size: 15px;
+        line-height: 20px;
+        border-bottom: 1px solid #FFF7E7;
+        transition: all 300ms ease;
+
+        &.error{
+          border-bottom-color: rgba(#A91889, 1);
+        }
+
+        &:not(.error):focus{
+          border-bottom-color: rgba(#FFF7E7, 0.5);
+        }
+      }
+
+      .btn-form{
+        margin-top: 60px;
+        background-color: #100A9B;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: none;
+        font-size: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        &:hover{
+          background-color: darken(#100A9B, 5%);
+        }
+
+        img{
+          margin-top: -5px;
+          margin-right: 58px;
+          @media (max-width: 767px) {
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+
+    .img{
+      pointer-events: none;
+      z-index: 3;
+      width: 330px;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      img{
+        transform: translate(-50%, -40%);
+      }
+    }
+  }
+
+  .bottom-list{
+    &__item{
+      display: flex;
+      align-items: flex-start;
+      font-size: 15px;
+      line-height: 25px;
+
+      img{
+        margin-right: 30px;
+      }
+    }
+  }
+
+  @media (max-width: 1220px) {
+    .col-6{
+      max-width: 100%;
+      flex: 0 0 100%;
+
+      +.col-6{
+        margin-top: 60px;
+      }
+    }
+
+    .col-4{
+      max-width: 50%;
+      flex: 0 0 50%;
+
+      &:nth-of-type(n + 3) {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .col-4{
+      max-width: 100%;
+      flex: 0 0 100%;
+
+      &:nth-of-type(n + 1) {
+        margin-top: 30px;
+      }
+    }
   }
 }

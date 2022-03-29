@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tino</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="./assets/css/main-style.min.css" rel="stylesheet">
+    <link href="./assets/fonts/tino-font/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="menu-bg"></div>
+<div class="cursor"></div>
+<header class="header">
+    <div class="header-inner">
+        <div class="logo">
+            <a href="/">
+                <img src="./assets/images/logo-top-white.svg" alt="">
+            </a>
+        </div>
+        <div class="header-menu">
+            <ul class="menu" id="header-menu">
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Case studies</a>
+                </li>
+                <li class="menu-item menu-item__has-child" >
+                    <a href="#" class="menu-link menu-link__has-child" data-menu="service-submenu">Services</a>
+                </li>
+                <li class="menu-item menu-item__has-child" >
+                    <a href="#" class="menu-link menu-link__has-child" data-menu="industries-submenu">Industries</a>
+                </li>
+            </ul>
+            <div class="main-menu-btn">
+                <button class="menu-btn">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="side-menu-wrapper">
+    <div class="side-menu">
+        <div class="side-menu-content">
+            <div class="side-menu-list" id="service-submenu">
+                <a href="./web-development.html" class="side-menu-item side-menu-item-1">
+                    <span class="side-menu-link">Web Development</span>
+                    <span class="side-menu-image">
+                        <video muted loop src="./assets/video/menu/web1.mp4"></video>
+                    </span>
+                </a>
+                <a href="./ui_ux.html" class="side-menu-item side-menu-item-2">
+                    <span class="side-menu-link">UI/UX Design</span>
+                    <span class="side-menu-image">
+                        <video muted loop src="./assets/video/menu/UI_UX1.mp4"></video>
+                    </span>
+                </a>
+                <a href="./development.html" class="side-menu-item side-menu-item-3">
+                    <span class="side-menu-link">Mobile Development</span>
+                    <span class="side-menu-image">
+                        <video muted loop src="./assets/video/menu/mob1.mp4"></video>
+                    </span>
+                </a>
+            </div>
+            <div class="side-menu-list" id="industries-submenu">
+                <a href="#" class="side-menu-item side-menu-item-1">
+                    <span class="side-menu-link">Healthcare</span>
+                    <span class="side-menu-image">
+                        <img src="./assets/images/menu/industries/Healthcare@2x.jpg" alt="">
+                    </span>
+                </a>
+                <a href="#" class="side-menu-item side-menu-item-2">
+                    <span class="side-menu-link">Finance</span>
+                    <span class="side-menu-image">
+                        <img src="./assets/images/menu/industries/Finance@2x.jpg" alt="">
+                    </span>
+                </a>
+                <a href="#" class="side-menu-item side-menu-item-3">
+                    <span class="side-menu-link">Ecommerce</span>
+                    <span class="side-menu-image">
+                        <img src="./assets/images/menu/industries/Ecommerce@2x.jpg" alt="">
+                    </span>
+                </a>
+                <a href="#" class="side-menu-item side-menu-item-4">
+                    <span class="side-menu-link">Gastronomy</span>
+                    <span class="side-menu-image">
+                        <img src="./assets/images/menu/industries/Gastronomy@2x.jpg" alt="">
+                    </span>
+                </a>
+                <a href="#" class="side-menu-item side-menu-item-5">
+                    <span class="side-menu-link">Telemedicine</span>
+                    <span class="side-menu-image">
+                        <img src="./assets/images/menu/industries/Telemedicine@2x.jpg" alt="">
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="primary-menu" id="main-menu"> <!-- menu-open -->
+    <div class="black-menu-bg"></div>
+    <div class="menu-wrapper">
+        <div class="white-bg-menu"></div>
+        <div class="menu-inner">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <div class="logo-menu magnetic">
+                        <a href="/"><img src="./assets/images/logo-top-black.svg?v=311nk4" alt="Tino Agency"></a>
+                    </div>
+                    <div class="btn-menu">
+                        <button class="close-menu magnetic" style="transform: translate(0px, 0px);">
+                            <span class="icon-times"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="menu-body">
+                    <div class="menu-body-inner">
+                        <div class="menu-body-col menu-body-left">
+                            <div class="title-menu">Menu</div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="/projects" class="link-menu close-menu">
+                                        <span>Work</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/blog/" class="link-menu close-menu">
+                                        <span>Blog</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/contact" class="link-menu close-menu">
+                                        <span>Contact</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="mobile-submenu">
+                                <div class="title-menu">Services</div>
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <a href="https://tino.design/custom-web-development" class="link-menu close-menu">
+                                            <span>Web Development</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="https://tino.design/design" class="link-menu close-menu">
+                                            <span>UI/UX Design</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="https://tino.design/development" class="link-menu close-menu">
+                                            <span>Mobile Development</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="menu-body-col menu-body-right">
+                            <div class="title-menu">Contact Us</div>
+                            <div class="email-block">
+                                <a href="mailto:info@tino.agency">info@tino.agency</a>
+                            </div>
+                            <ul class="social-menu">
+                                <li class="menu-item"><a href="https://www.facebook.com/tino.digital.agency"><span>Facebook</span></a></li>
+                                <li class="menu-item"><a href="https://twitter.com/AgencyTino"><span>Twitter</span></a></li>
+                                <li class="menu-item"><a href="https://www.behance.net/designtino"><span>Behance</span></a></li>
+                                <li class="menu-item"><a href="https://dribbble.com/anastasia-tino"><span>Dribbble</span></a></li>
+                                <li class="menu-item"><a href="https://www.instagram.com/tino.agency"><span>Instagram</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<main class="app-wrapper">
+    <div class="landing-page eight_weeks">
+        <div class="landing-section section-dark landing-section-hero mob-pt-80">
+            <div class="landing-section-hero-1">
+                <div class="img scrollAlfaActivated">
+                    <img src="assets/images/landings/eight_weeks/hero_1.png" alt=""/>
+                </div>
+                <div class="container">
+                   <div class="mw-760">
+                       <h1 class="scrollAlfaActivated">
+                           From Idea to Clickable Prototype in Just <span class="underline">8 Weeks</span> <img class="txt-icon txt-h1" src="assets/images/landings/eight_weeks/hand1.svg" alt="">
+                       </h1>
+                       <p class="mt-40 scrollAlfaActivated">Learn our proven approach to effective product launch so that you can create a clickable prototype that will validate your MVP and reduce time-to-market.</p>
+                       <a class="mt-60 mob-mt-40 btn-primary scrollAlfaActivated" href="8_weeks_form.html">The ultimate guide to product launch</a>
+                   </div>
+                </div>
+            </div>
+            <div class="landing-section-hero-2 pb-250 pt-310">
+                <div class="img scrollAlfaActivated">
+                    <img src="assets/images/landings/eight_weeks/hero_2.png" alt=""/>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6"></div>
+                        <div class="col-6 scrollAlfaActivated">
+                            <h2>Product Discovery</h2>
+                            <p class="mt-50">
+                                Our team will help you clarify your future product details during the product discovery
+                                phase. Specifying technical requirements and identifying the scope of your product at
+                                this stage can shorten your development timeline and cut your costs.
+                            </p>
+                            <p class="mt-40">
+                                Then we turn your idea into a tangible, interactive user interface design and validate
+                                your product with user testing. Sorting out feasibility and usability issues as soon as
+                                possible ensures a smooth transition between product design and development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--    // white section-->
+        <div class="landing-section prototype_weeks black-clr section-white p-tb-150">
+            <div class="img scrollAlfaActivated"><img src="assets/images/landings/eight_weeks/prototype.png" alt=""/></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 scrollAlfaActivated">
+                        <h2>Why Clickable Prototype? </h2>
+                        <ol class="circle-type-list">
+                            <li><p>Reduce the time it takes for your idea to reach the market</p></li>
+                            <li><p>Deliver a product that reflects your user’s needs and meets</p></li>
+                            <li><p>Optimize your design and development budget</p></li>
+                            <li><p>Maximize your return on investment by following a proven system</p></li>
+                            <li><p>Simplify the process of launching a product by setting the right priorities from the
+                                start</p></li>
+                            <li><p>Ensure financing with a user-tested clickable prototype</p></li>
+                            <li><p>Validate your MVP in a short amount of time</p></li>
+                            <li><p>Improve communication between the design and development teams</p></li>
+                            <li><p>Gain confidence in the functionality of your product by paying attention to detail
+                                and resolving usability issues early</p></li>
+                            <li><p>Reduce maintenance costs by considering the tech stack and implementation process in
+                                advance</p></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="layout-center pt-220 pb-70 scrollAlfaActivated circle-section">
+
+                    <span class="circle-fade position-1"></span>
+                    <span class="circle-fade position-2"></span>
+                    <span class="circle-fade position-3"></span>
+                    <span class="circle-fade position-4"></span>
+                    <span class="circle-fade position-5"></span>
+                    <span class="circle-fade position-6"></span>
+                    <span class="circle-fade position-7"></span>
+                    <span class="circle-fade position-8"></span>
+
+                    <button class="btn-primary">Book a Consultation Session</button>
+                </div>
+                <div class="img-bg1"><img src="assets/images/landings/eight_weeks/book2.png" alt=""/></div>
+                <div class="img-bg2"><img src="assets/images/landings/eight_weeks/book3.png" alt=""/></div>
+            </div>
+        </div>
+
+        <div class="landing-section related-section section-white black-clr pb-150">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 related-section__left">
+                        <h2 class="scrollAlfaActivated">Examples of Our <br/>Work</h2>
+                        <div class="rating scrollAlfaActivated layout-row align-center mob-mt-40 mob-mb-25">
+                            5.0
+                            <img src="assets/images/landings/ui-ix/star-line.svg" class="ml-20" alt="">
+                        </div>
+                        <p class="scrollAlfaActivated">“ They cared about their work, instead of finishing it as fast as
+                            possible to make a quick buck. In addition to boosting website traffic by 95%, the new
+                            materials attracted fresh customer demographics and two large contracts. Tino Digital Agency
+                            impressed with their impeccable customer service. They listened carefully to requirements,
+                            addressed all feedback, and delivered great results at a reasonable cost. “</p>
+                        <div class="author scrollAlfaActivated">
+                            <div class="layout-row align-center mt-40">
+                                <div class="ava layout-center">
+                                    <img src="./assets/images/testimonials/woman1.svg" alt="">
+                                </div>
+                                <div class="name">
+                                    <p>Kumsal Pınargözü</p>
+                                    <div>Product manager at Codeway</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 related-section__right">
+                        <h2 class="scrollAlfaActivated">Related Case Study</h2>
+                        <div class="scrollAlfaActivated">
+                            <div class="related-section__right-card tilt-card">
+                                <img class="full-screen-img" src="./assets/images/projects/covers/scaner.png" alt="">
+                                <div>
+                                    <div class="type">Mobile tool</div>
+                                    <div class="name">Scanner +</div>
+                                </div>
+                                <div class="dev_type">Application</div>
+                            </div>
+                        </div>
+                        <div class="layout-row scrollAlfaActivated">
+                            <div class="flex"></div>
+                            <a href="" class="more-link mt-40">View All Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section deliverable-section landing-section p-tb-150">
+            <div class="container">
+                <h2>Deliverables</h2>
+                <div class="row">
+                    <div class="col col-6">
+                        <ol class="circle-type-list dark">
+                            <li><p>User Flow Diagram</p></li>
+                            <li><p>User Stories</p></li>
+                            <li><p>Clickable Prototype</p></li>
+                            <li><p>User Testing</p></li>
+                            <li><p>Hourly Rate - <b>150$</b></p></li>
+                        </ol>
+                    </div>
+                    <div class="col col-6">
+                        <div class="fake-input">
+                            <div class="fake-input_icon">
+                                <img src="assets/images/landings/eight_weeks/price.svg" alt="">
+                            </div>
+                            <div>
+                                <div class="fake-input_label">
+                                    Price Range:
+                                </div>
+                                <div class="fake-input_value">
+                                    $15,000 – $22,000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fake-input-hr"></div>
+                        <div class="fake-input">
+                            <div class="fake-input_icon">
+                                <img src="assets/images/landings/eight_weeks/time.svg" alt="">
+                            </div>
+                            <div>
+                                <div class="fake-input_label">
+                                    Price Range:
+                                </div>
+                                <div class="fake-input_value">
+                                    $15,000 – $22,000
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="full-width mt-100">
+                    <img src="assets/images/landings/eight_weeks/deliverables.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="section section-share parallax-wrapper scrollAlfaActivated landing-section">
+            <div class="parallax-bg" style="background-image: url(./assets/images/cta/cover_cta.jpg)"></div>
+            <div class="container">
+                <div class="row row-share scrollAlfaActivated">
+                    <div class="col col-text">
+                        <p class="sub-title">Satisfy users' expectations and influence their behaviors on the buyer's
+                            journey with strategic design.</p>
+                    </div>
+                    <div class="col col-btn text-right">
+                        <button class="btn-bordered mw-400 mr-25">
+                            <span>Schedule a Conversation</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="landing-section action-steps p-tb-150">
+            <div class="img-left">
+                <img src="./assets/images/landings/eight_weeks/back_6.png" alt="">
+            </div>
+            <div class="img-right">
+                <img src="./assets/images/landings/eight_weeks/back_7.png" alt="">
+            </div>
+            <div class="container">
+                <h2>Action Steps</h2>
+                <div class="row">
+                    <div class="col col-6"></div>
+                    <div class="col col-6">
+                        <h3 class="scrollAlfaActivated mt-60">The process of creating a clickable prototype involves the
+                            following nine steps:</h3>
+                    </div>
+                </div>
+                <div class="row row-m-20 mob-pb-60 wrap mob-mt-40 mobile-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide gradient-num-col col-6 p-20 mt-80 mob-mt-0 scrollAlfaActivated">
+                            <div>
+                                <div class="gradient-counter">01</div>
+                                <h3>Knowledge Transfer</h3>
+                                <p class="mt-40 opct-06">We conduct a conversation with you and your team to share all
+                                    relevant information and expectations about the product</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide gradient-num-col col-6 p-20 mt-80 mob-mt-0 scrollAlfaActivated">
+                            <div>
+                                <div class="gradient-counter">02</div>
+                                <h3>Defining User Personas</h3>
+                                <p class="mt-40 opct-06">We create a concise demographic and behavioral description of
+                                    your typical customer based on a thorough understanding of your users' needs. User
+                                    personas reflect your users' unique needs, desires, preferences, and pain points</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide gradient-num-col col-6 p-20 mt-80 mob-mt-0 scrollAlfaActivated">
+                            <div>
+                                <div class="gradient-counter">03</div>
+                                <h3>Mapping User Journeys</h3>
+                                <p class="mt-40 opct-06">We map out the steps that each user persona takes while
+                                    interacting with your product components. Mapping out user journeys can help you
+                                    identify usability gaps in your product design</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide gradient-num-col col-6 p-20 mt-80 mob-mt-0 scrollAlfaActivated">
+                            <div>
+                                <div class="gradient-counter">04</div>
+                                <h3>Planning User Stories</h3>
+                                <p class="mt-40 opct-06">We write user stories that briefly describe each product
+                                    feature from the user's perspective. User stories help us clarify which features
+                                    should be included in the minimum viable product release and which ones could be
+                                    addressed in subsequent releases. In addition, they facilitate discussions between
+                                    different team members about product development</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide gradient-num-col col-6 p-20 mt-80 mob-mt-0 scrollAlfaActivated">
+                            <div>
+                                <div class="gradient-counter">05</div>
+                                <h3>Defining the Tech Stack</h3>
+                                <p class="mt-40 opct-06">After the product features have been decided upon, we carefully
+                                    think through the tech stack and implementation process. We consider the role of
+                                    third-party APIs, development frameworks, and post-launch strategy for the product's
+                                    success</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide gradient-num-col col-6 p-20 mt-80 mob-mt-0 scrollAlfaActivated">
+                            <div>
+                                <div class="gradient-counter">06</div>
+                                <h3>Producing UX Wireframes</h3>
+                                <p class="mt-40 opct-06">Our UX designers use project specifications to create
+                                    wireframes for all product screens. New iterations are implemented relatively
+                                    quickly based on your feedback at this stage</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide gradient-num-col col-6 p-20 mt-80 mob-mt-0 scrollAlfaActivated">
+                            <div>
+                                <div class="gradient-counter">07</div>
+                                <h3>UI Design</h3>
+                                <p class="mt-40 opct-06">
+                                    UI designers create a visually appealing graphical interface to establish an
+                                    emotional connection with your users. High-quality UI design distinguishes your
+                                    product from the competition and improves customer loyalty
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide gradient-num-col col-6 p-20 mt-80 mob-mt-0 scrollAlfaActivated">
+                            <div>
+                                <div class="gradient-counter">08</div>
+                                <h3>Creating a Prototype</h3>
+                                <p class="mt-40 opct-06">We interlink all designed screens into an interactive prototype
+                                    that can be user-tested. A polished prototype represents an early model of your
+                                    product that you can take to the investors and app developers</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide gradient-num-col col-6 p-20 mt-80 mob-mt-0 scrollAlfaActivated">
+                            <div>
+                                <div class="gradient-counter">09</div>
+                                <h3>User Testing</h3>
+                                <p class="mt-40 opct-06">Finally, a clickable prototype undergoes user testing to
+                                    validate your MVP. Users are presented with a set of tasks based on a specified user
+                                    journey. Based on the collected feedback, we examine how the product resonates with
+                                    the users, identify usability issues, and implement necessary updates</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar scrollAlfaActivated"></div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <hr/>
+                <nav class="footer-inner">
+                    <div class="col">
+                        <a href="/" class="logo"><img src="./assets/images/logo-top-white.svg?v=311nk4" alt="Tino Agency"></a>
+                        <p class="text">Our passion for creativity, efficiency, and innovation has helped us to produce transformative user experiences across a wide variety of industries and company sizes since 2010. We are tremendously grateful for the opportunity to propel your mission forward!</p>
+                    </div>
+                    <div class="col">
+                        <p class="name">Follow Us</p>
+                        <a href="https://www.facebook.com/tino.agency/" target="_blank">Facebook</a>
+                        <a href="https://twitter.com/AgencyTino" target="_blank">Twitter</a>
+                        <a href="https://www.linkedin.com/company/tino-digital-agency/" target="_blank">Linkedin</a>
+                        <a href="https://www.behance.net/designtino" target="_blank">Behance</a>
+                        <a href="https://dribbble.com/anastasia-tino" target="_blank">Dribbble</a>
+                        <a href="https://www.instagram.com/tino.agency" target="_blank">Instagram</a>
+                    </div>
+                    <div class="col contact">
+                        <p class="name">Contact Us</p>
+                        <p>Houston, TX 77058</p>
+                        <p>1110 E NASA Pkwy Suite 545H</p>
+                        <a href="tel:+1 (281) 602-9912">+1 (281) 602-9912</a>
+                        <a href="mailto:info@tino.agency">info@tino.agency</a>
+                    </div>
+                </nav>
+                <p class="copyright">© 2015 Tino Digital Agency</p>
+            </div>
+        </footer>
+    </div>
+</main>
+
+<script src="./assets/js/main-script.min.js"></script>
+</body>
+</html>

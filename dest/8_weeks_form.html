@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tino</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="./assets/css/main-style.min.css" rel="stylesheet">
+    <link href="./assets/fonts/tino-font/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="menu-bg"></div>
+<div class="cursor"></div>
+<header class="header">
+    <div class="header-inner">
+        <div class="logo">
+            <a href="/">
+                <img src="./assets/images/logo-top-white.svg" alt="">
+            </a>
+        </div>
+        <div class="header-menu">
+            <ul class="menu" id="header-menu">
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Case studies</a>
+                </li>
+                <li class="menu-item menu-item__has-child" >
+                    <a href="#" class="menu-link menu-link__has-child" data-menu="service-submenu">Services</a>
+                </li>
+                <li class="menu-item menu-item__has-child" >
+                    <a href="#" class="menu-link menu-link__has-child" data-menu="industries-submenu">Industries</a>
+                </li>
+            </ul>
+            <div class="main-menu-btn">
+                <button class="menu-btn">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="side-menu-wrapper">
+    <div class="side-menu">
+        <div class="side-menu-content">
+            <div class="side-menu-list" id="service-submenu">
+                <a href="./web-development.html" class="side-menu-item side-menu-item-1">
+                    <span class="side-menu-link">Web Development</span>
+                    <span class="side-menu-image">
+                        <video muted loop src="./assets/video/menu/web1.mp4"></video>
+                    </span>
+                </a>
+                <a href="./ui_ux.html" class="side-menu-item side-menu-item-2">
+                    <span class="side-menu-link">UI/UX Design</span>
+                    <span class="side-menu-image">
+                        <video muted loop src="./assets/video/menu/UI_UX1.mp4"></video>
+                    </span>
+                </a>
+                <a href="./development.html" class="side-menu-item side-menu-item-3">
+                    <span class="side-menu-link">Mobile Development</span>
+                    <span class="side-menu-image">
+                        <video muted loop src="./assets/video/menu/mob1.mp4"></video>
+                    </span>
+                </a>
+            </div>
+            <div class="side-menu-list" id="industries-submenu">
+                <a href="#" class="side-menu-item side-menu-item-1">
+                    <span class="side-menu-link">Healthcare</span>
+                    <span class="side-menu-image">
+                        <img src="./assets/images/menu/industries/Healthcare@2x.jpg" alt="">
+                    </span>
+                </a>
+                <a href="#" class="side-menu-item side-menu-item-2">
+                    <span class="side-menu-link">Finance</span>
+                    <span class="side-menu-image">
+                        <img src="./assets/images/menu/industries/Finance@2x.jpg" alt="">
+                    </span>
+                </a>
+                <a href="#" class="side-menu-item side-menu-item-3">
+                    <span class="side-menu-link">Ecommerce</span>
+                    <span class="side-menu-image">
+                        <img src="./assets/images/menu/industries/Ecommerce@2x.jpg" alt="">
+                    </span>
+                </a>
+                <a href="#" class="side-menu-item side-menu-item-4">
+                    <span class="side-menu-link">Gastronomy</span>
+                    <span class="side-menu-image">
+                        <img src="./assets/images/menu/industries/Gastronomy@2x.jpg" alt="">
+                    </span>
+                </a>
+                <a href="#" class="side-menu-item side-menu-item-5">
+                    <span class="side-menu-link">Telemedicine</span>
+                    <span class="side-menu-image">
+                        <img src="./assets/images/menu/industries/Telemedicine@2x.jpg" alt="">
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="primary-menu" id="main-menu"> <!-- menu-open -->
+    <div class="black-menu-bg"></div>
+    <div class="menu-wrapper">
+        <div class="white-bg-menu"></div>
+        <div class="menu-inner">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <div class="logo-menu magnetic">
+                        <a href="/"><img src="./assets/images/logo-top-black.svg?v=311nk4" alt="Tino Agency"></a>
+                    </div>
+                    <div class="btn-menu">
+                        <button class="close-menu magnetic" style="transform: translate(0px, 0px);">
+                            <span class="icon-times"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="menu-body">
+                    <div class="menu-body-inner">
+                        <div class="menu-body-col menu-body-left">
+                            <div class="title-menu">Menu</div>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="/projects" class="link-menu close-menu">
+                                        <span>Work</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/blog/" class="link-menu close-menu">
+                                        <span>Blog</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/contact" class="link-menu close-menu">
+                                        <span>Contact</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="mobile-submenu">
+                                <div class="title-menu">Services</div>
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <a href="https://tino.design/custom-web-development" class="link-menu close-menu">
+                                            <span>Web Development</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="https://tino.design/design" class="link-menu close-menu">
+                                            <span>UI/UX Design</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="https://tino.design/development" class="link-menu close-menu">
+                                            <span>Mobile Development</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="menu-body-col menu-body-right">
+                            <div class="title-menu">Contact Us</div>
+                            <div class="email-block">
+                                <a href="mailto:info@tino.agency">info@tino.agency</a>
+                            </div>
+                            <ul class="social-menu">
+                                <li class="menu-item"><a href="https://www.facebook.com/tino.digital.agency"><span>Facebook</span></a></li>
+                                <li class="menu-item"><a href="https://twitter.com/AgencyTino"><span>Twitter</span></a></li>
+                                <li class="menu-item"><a href="https://www.behance.net/designtino"><span>Behance</span></a></li>
+                                <li class="menu-item"><a href="https://dribbble.com/anastasia-tino"><span>Dribbble</span></a></li>
+                                <li class="menu-item"><a href="https://www.instagram.com/tino.agency"><span>Instagram</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<main class="app-wrapper">
+    <div class="landing-page eight_weeks_form">
+        <div class="landing-section section-dark landing-section-hero mob-pt-80">
+            <div class="landing-section-hero-1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <h1 class="scrollAlfaActivated">
+                                How to <img class="txt-icon txt-h1 lg-60" src="assets/images/landings/eight_weeks/like.svg" alt=""> Successfully
+                                <img class="txt-icon txt-h1 lg-70" src="assets/images/landings/eight_weeks/arrow_circle.svg" alt="">
+                                Launch a Product?
+                            </h1>
+                            <p class="mt-40 scrollAlfaActivated">Having helped many companies around the world to enter the market relying on our expertise, we are excited to share with you our proven system to build a successful product. Following this simple process, you will be able to reduce your time-to-market and maximize return on investment. </p>
+                        </div>
+                        <div class="col-6">
+                            <div class="form">
+                                <div class="img scrollAlfaActivated">
+                                    <img src="assets/images/landings/eight_weeks/book.png" srcset="assets/images/landings/eight_weeks/book2x.png 2x" alt="">
+                                </div>
+                                <div class="form-section">
+                                    <div class="form-inner scrollAlfaActivated" id="form">
+                                        <input type="text" onclick="resetFocus()" name="text" id="input_name" placeholder="First name">
+                                        <input type="email" onclick="resetFocus()" name="email" id="input_email" placeholder="E-mail">
+                                        <div class="btn-form btn-primary" onclick="downloadBtn()">
+                                            <img src="assets/images/landings/eight_weeks/download_btn.svg" alt="">
+                                            Download Free eBook
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-list mt-100">
+                        <div class="row scrollAlfaActivated">
+                            <div class="col-4">
+                                <div class="bottom-list__item">
+                                    <img src="assets/images/landings/eight_weeks/img-b-1.png" alt="">
+                                    This book has our proven idea-to-market process
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="bottom-list__item">
+                                    <img src="assets/images/landings/eight_weeks/img-b-2.png" alt="">
+                                    Learn 9-step system to creating a clickable prototype
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="bottom-list__item">
+                                    <img src="assets/images/landings/eight_weeks/img-b-3.png" alt="">
+                                    Tools to get started planning a successful product launch
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="bottom-list__item">
+                                    <img src="assets/images/landings/eight_weeks/img-b-4.png" alt="">
+                                    Get to know how to validate your product idea in 8 weeks
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script>
+    const resetFocus = () => {
+        downloadBtn(true)
+    }
+
+    const downloadBtn = (reset = false) => {
+        const form = document.getElementById('form');
+        for (const i of form.getElementsByTagName('input')) {
+            if (!reset) {
+                if (i.value === '' || (i.type === 'email' && !validateEmail(i.value))) {
+                    i.className = 'error';
+
+                    setTimeout(() => {
+                        i.className = '';
+                    }, 3000)
+                } else {
+                    downloadURI(
+                        'assets/images/landings/eight_weeks/book2.png',
+                        'book'
+                    )
+                }
+            } else {
+                i.className = '';
+            }
+        }
+    }
+
+    const validateEmail = (email) => {
+        const reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return reg.test(email);
+    };
+
+    const downloadURI = (uri, name) => {
+        let link = document.createElement("a");
+        link.download = name;
+        link.href = uri;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        delete link;
+    }
+</script>
+
+<script src="./assets/js/main-script.min.js"></script>
+</body>
+</html>
