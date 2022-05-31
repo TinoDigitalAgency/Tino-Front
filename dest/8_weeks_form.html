@@ -246,6 +246,19 @@
         </div>
     </div>
 </main>
+<div class="popup-wrapper" hidden id="book-success">
+    <div class="popup">
+        <a href="#" class="popup-close">Close</a>
+        <div class="popup-image">
+            <img src="assets/images/landings/eight_weeks/book-success.png" alt="">
+        </div>
+        <div class="popup-content">
+            <h2>Thank you <br>for your submission!</h2>
+            <a href="https://tino.design/assets/documents/tino-signature.pdf" class="btn-primary" target="_blank">Read The Ebook</a>
+            <p>We've also sent a copy to your inbox.</p>
+        </div>
+    </div>
+</div>
 <script>
     const resetFocus = () => {
         downloadBtn(true)
@@ -262,10 +275,30 @@
                         i.className = '';
                     }, 3000)
                 } else {
+                    const name = document.getElementById('input_name').value
+                    const email = document.getElementById('input_email').value
+                    fetch('https://tino.design/mail-book', {
+                        method: 'POST',
+                        mode: 'cors',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            name: name,
+                            email: email
+                        })
+                    })
+                        .then((response) => {
+                            return response.json();
+                        })
+                        .then((data) => {
+                            console.log(data);
+                        });
                     downloadURI(
                         'assets/images/landings/eight_weeks/book2.png',
                         'book'
                     )
+                    document.getElementById('book-success').hidden = false
                 }
             } else {
                 i.className = '';
