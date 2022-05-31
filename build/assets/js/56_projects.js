@@ -33,14 +33,16 @@ if (FILTER_TRIGGER) {
 if (FILTER_OVERLAY) {
     FILTER_OVERLAY.addEventListener('click', filterClose);
 }
-
-window.addEventListener('load', function(){
-    let grid = new Isotope('.grid', {
-        itemSelector: '.element-item',
-        filter: '*',
-        layoutMode: 'masonry'
+const gridElement = document.getElementsByClassName('grid');
+if (gridElement && gridElement.length > 0) {
+    window.addEventListener('load', function(){
+        let grid = new Isotope('.grid', {
+            itemSelector: '.element-item',
+            filter: '*',
+            layoutMode: 'masonry'
+        });
+        for(let i = 0; i < dataFilters.length; i++) {
+            dataFilters[i].addEventListener('click', (element) => filterToggle(element.target, grid, element));
+        }
     });
-    for(let i = 0; i < dataFilters.length; i++) {
-        dataFilters[i].addEventListener('click', (element) => filterToggle(element.target, grid, element));
-    }
-});
+}

@@ -31,7 +31,9 @@
     }
   }
   .logo {
-    height: 60px;
+    img {
+      height: 60px;
+    }
     @media (max-width: 767px) {
       height: 50px;
       img {
