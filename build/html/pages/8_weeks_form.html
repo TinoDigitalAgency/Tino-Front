@@ -16,7 +16,7 @@
                         <div class="col-6">
                             <div class="form">
                                 <div class="img scrollAlfaActivated">
-                                    <img src="assets/images/landings/eight_weeks/book.png" srcset="assets/images/landings/eight_weeks/book2x.png 2x" alt="">
+                                    <img src="assets/images/landings/eight_weeks/book.png" alt="">
                                 </div>
                                 <div class="form-section">
                                     <div class="form-inner scrollAlfaActivated" id="form">
@@ -59,6 +59,33 @@
                             </div>
                         </div>
                     </div>
+                    <div class="price-wrapper">
+                        <div class="price-block">
+                            <p>Our team has delivered products that raised over</p>
+                            <h2>$88 <img src="assets/images/landings/eight_weeks/money.svg" alt="">million</h2>
+                            <p>in funding for our clients</p>
+                        </div>
+                    </div>
+                    <div class="logos-wrapper">
+                        <div class="logos-item">
+                            <img src="assets/images/landings/eight_weeks/1 (5).png" alt="">
+                        </div>
+                        <div class="logos-item">
+                            <img src="assets/images/landings/eight_weeks/2 (3).png" alt="">
+                        </div>
+                        <div class="logos-item">
+                            <img src="assets/images/landings/eight_weeks/3 (2).png" alt="">
+                        </div>
+                        <div class="logos-item">
+                            <img src="assets/images/landings/eight_weeks/3 (3).png" alt="">
+                        </div>
+                        <div class="logos-item">
+                            <img src="assets/images/landings/eight_weeks/4 (3).png" alt="">
+                        </div>
+                        <div class="logos-item">
+                            <img src="assets/images/landings/eight_weeks/1 (6).png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -84,6 +111,7 @@
 
     const downloadBtn = (reset = false) => {
         const form = document.getElementById('form');
+        let isSend = false;
         for (const i of form.getElementsByTagName('input')) {
             if (!reset) {
                 if (i.value === '' || (i.type === 'email' && !validateEmail(i.value))) {
@@ -93,30 +121,33 @@
                         i.className = '';
                     }, 3000)
                 } else {
-                    const name = document.getElementById('input_name').value
-                    const email = document.getElementById('input_email').value
-                    fetch('https://tino.design/mail-book', {
-                        method: 'POST',
-                        mode: 'cors',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({
-                            name: name,
-                            email: email
+                    if(!isSend) {
+                        const name = document.getElementById('input_name').value
+                        const email = document.getElementById('input_email').value
+                        fetch('https://tino.design/mail-book', {
+                            method: 'POST',
+                            mode: 'cors',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({
+                                name: name,
+                                email: email
+                            })
                         })
-                    })
-                        .then((response) => {
-                            return response.json();
-                        })
-                        .then((data) => {
-                            console.log(data);
-                        });
-                    downloadURI(
-                        'assets/images/landings/eight_weeks/book2.png',
-                        'book'
-                    )
-                    document.getElementById('book-success').hidden = false
+                            .then((response) => {
+                                return response.json();
+                            })
+                            .then((data) => {
+                                console.log(data);
+                            });
+                        downloadURI(
+                            'assets/images/landings/eight_weeks/book2.png',
+                            'book'
+                        )
+                        document.getElementById('book-success').hidden = false;
+                        isSend = true
+                    }
                 }
             } else {
                 i.className = '';

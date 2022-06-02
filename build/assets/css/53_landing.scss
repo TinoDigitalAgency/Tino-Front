@@ -1923,10 +1923,19 @@
 
 .eight_weeks_form{
   min-height: 100vh;
-  background-image: url("../images/landings/eight_weeks/back-form.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right center;
+  position: relative;
+  &:before{
+    content: "";
+    background-image: url("../images/landings/eight_weeks/back-form.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 678px;
+    height: 100%;
+  }
 
   .landing-section{
     padding-top: 200px;
@@ -1998,20 +2007,15 @@
 
       .btn-form{
         margin-top: 60px;
-        background-color: #100A9B;
         width: 100%;
         height: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-image: none;
         font-size: 20px;
         padding-left: 30px;
         padding-right: 30px;
 
-        &:hover{
-          background-color: darken(#100A9B, 5%);
-        }
 
         img{
           margin-top: -5px;
@@ -2031,7 +2035,7 @@
       left: 50%;
       top: 0;
       img{
-        transform: translate(-50%, -40%);
+        transform: translate(-60%, -40%);
       }
     }
   }
@@ -2045,6 +2049,99 @@
 
       img{
         margin-right: 30px;
+      }
+    }
+  }
+
+  .price-wrapper{
+    margin: 150px 0;
+    position: relative;
+    @media (max-width: 767px) {
+      margin: 70px 0;
+    }
+    &:before{
+      content: "";
+      background-image: url("../images/landings/eight_weeks/money-gradient.svg");
+      position: absolute;
+      top: -120px;
+      left: 0;
+      width: 677px;
+      height: 847px;
+      transform: translateX(-30%);
+      z-index: -1;
+      @media (max-width: 767px) {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .price-block{
+      background-image: url("../images/landings/eight_weeks/money-back.png");
+      background-size: cover;
+      padding: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: #FDFAEE;
+      @media (max-width: 767px) {
+        padding: 50px 20px;
+      }
+      p{
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 40px;
+        @media (max-width: 767px) {
+          font-size: 18px;
+          line-height: 25px;
+        }
+      }
+      h2{
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 90px;
+        align-items: flex-start;
+        display: flex;
+        margin: 30px 0 20px;
+        @media (max-width: 767px) {
+          font-size: 30px;
+          line-height: 40px;
+          margin: 20px 0 10px;
+        }
+        img{
+          margin: 0 20px;
+          @media (max-width: 767px) {
+            width: 40px;
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .logos-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    .logos-item{
+      width: calc(100%/3);
+      padding: 20px 0;
+      border-right: 1px solid #2C2C2C;
+      border-bottom: 1px solid #2C2C2C;
+      @media (max-width: 991px) {
+        width: 100%;
+        border-right: none;
+      }
+      img{
+        max-width: 280px;
+        margin: 0 auto;
+      }
+      &:nth-child(3), &:nth-child(6){
+        border-right:none;
+      }
+      &:nth-child(4), &:nth-child(5),&:nth-child(6){
+        border-bottom: none;
+        @media (max-width: 991px) {
+          border-bottom: 1px solid #2C2C2C;
+        }
       }
     }
   }
