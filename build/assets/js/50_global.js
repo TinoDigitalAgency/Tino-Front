@@ -192,7 +192,7 @@ const responsiveSwiper = function () {
     function swiperMode() {
         if (window.innerWidth <= 767) {
             swiper = new Swiper('.mobile-slider', {
-                freeMode: true,
+                // freeMode: true,
                 autoHeight: true,
                 slidesPerView: "auto",
                 scrollbar: {

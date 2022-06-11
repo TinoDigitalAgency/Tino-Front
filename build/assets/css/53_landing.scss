@@ -191,8 +191,9 @@
     }
 
     .btn-primary{
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 8px;
+      padding-right: 8px;
+      font-size: 15px;
     }
 
     .circle-section{
@@ -2204,6 +2205,11 @@
     justify-content: center;
     align-items: center;
     padding: 80px 95px 80px 50px;
+    @media (max-width: 767px) {
+      flex-direction: column;
+      max-width: calc(100% - 40px);
+      padding: 60px 20px 30px;
+    }
     &:before{
       content: "";
       background-image: url("../images/landings/eight_weeks/mask.svg");
@@ -2225,20 +2231,40 @@
       font-size: 16px;
       line-height: 20px;
       color: #FDFAEE;
+      @media (max-width: 767px) {
+        top: 20px;
+        right: 20px;
+      }
     }
     &-image{
       width: 360px;
       margin-right: 80px;
+      @media (max-width: 767px) {
+        width: 100%;
+        max-width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 20px;
+      }
       img{
         width: 100%;
       }
     }
     &-content{
       width: calc(100% - 440px);
+      @media (max-width: 767px) {
+        width: 100%;
+        text-align: center;
+      }
       h2{
         margin-bottom: 30px;
         font-size: 50px;
         line-height: 60px;
+        @media (max-width: 767px) {
+          margin-bottom: 20px;
+          font-size: 26px;
+          line-height: 35px;
+        }
       }
       .btn-primary{
         font-weight: 500;
@@ -2246,12 +2272,21 @@
         line-height: 30px;
         padding: 35px 65px;
         margin-bottom: 30px;
+        @media (max-width: 767px) {
+          padding: 25px;
+          font-size: 18px;
+          line-height: 25px;
+        }
       }
       p{
         font-weight: 300;
         font-size: 20px;
         line-height: 30px;
         color: #FFF7E7;
+        @media (max-width: 767px) {
+          font-size: 18px;
+          line-height: 26px;
+        }
       }
     }
   }
